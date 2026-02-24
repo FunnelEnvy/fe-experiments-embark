@@ -1,5 +1,4 @@
-# FunnelEnvy Experiment Code for [Client Name or General Purpose]
-
+# FunnelEnvy Experiment Code for Embark
 ## Overview
 This repo stores experiment code and is used for delivery and review.
 
