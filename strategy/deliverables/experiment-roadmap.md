@@ -21,7 +21,7 @@ Experiments are grouped into three tiers:
 | 1 | Homepage Hero: Static Positioning with Optimized Content Offer | / | Quick Win | 5 | 4 | 5 | 14 |
 | 2 | Homepage Proof Strip: Case Study Metrics Above Fold | / | Quick Win | 4 | 4 | 4 | 12 |
 | 3 | Contact Page: PMax Retargeting Form Completion + Mobile Optimization | /contact | Quick Win | 4 | 4 | 3 | 11 |
-| 4 | Service Pages: Contextual Resource CTAs | /what-we-do/* | Strategic Bet | 5 | 4 | 3 | 12 |
+| 4 | Service Pages: Contextual Resource CTAs | /what-we-do/* | Strategic Bet | 5 | 4 | 4 | 13 |
 | 5 | Homepage CTA: Specific Action Language | / | Quick Win | 4 | 4 | 5 | 13 |
 | 6 | Service Page Differentiation Injection | /what-we-do/financial-advisory-consulting | Strategic Bet | 4 | 3 | 4 | 11 |
 | 7 | Objection Preemption: "Not a CPA Firm" Reframe | /contact, /what-we-do | Strategic Bet | 4 | 4 | 3 | 11 |
@@ -255,31 +255,84 @@ Impact 4 because the current CTA click rate is nearly zero, so there is a large 
 
 ### 4. Service Pages: Contextual Resource CTAs
 
-**Page:** /what-we-do/* and /who-we-serve/* (20 pages total)
+**Page:** /what-we-do/* and /who-we-serve/* (30 pages total)
 **What to test:** Add contextual resource download CTAs to service and industry pages, which currently have zero conversion mechanism.
 
-**Current state:** Service pages (/what-we-do/*) receive 4,224 sessions per 90 days across 13 pages. Industry pages (/who-we-serve/*) receive 1,277 sessions across 7 pages. Combined: 5,501 sessions per quarter with a 0% conversion rate. These pages describe Embark's offerings but provide no mechanism for content download, newsletter signup, or any lead capture. Meanwhile, the /resources section converts at 6.55% with existing templates and guides.
+**Current state (90-day GA4 pull, 2025-11-28 to 2026-02-25):**
 
-**Baseline:** ~1,834 combined monthly sessions, 31.6% bounce rate, 0% CVR. This is the largest sized opportunity in the analytics: an estimated 22 additional conversions per month if a 3% capture rate is achieved with a 0.4 conservatism factor.
+Service and industry pages received 4,441 sessions across 30 pages. The engagement data confirms these pages are visited and read, but have no conversion path:
 
-**Proposed change:** Add contextual resource download CTAs to each service page, matched to the page's topic. Examples:
-- /what-we-do/m-and-a-consulting: "Download our Post-Merger Integration Checklist" (the checklist already exists and converts at 6.44% on its own page)
-- /what-we-do/financial-advisory-consulting: "Get the ASC 606 Revenue Recognition Template"
-- /what-we-do/cfo-consulting: "Download the 13-Week Cash Flow Forecast Model"
-- /who-we-serve/pe-vc: "See how we helped Solo Brands complete their IPO" (case study link)
+Top service pages by traffic:
 
-For industry pages, link to the most relevant case study by industry.
+| Page | Sessions | Bounce Rate | Avg Session Duration | CTA Clicks | Form Events |
+|---|---|---|---|---|---|
+| /what-we-do/financial-advisory-consulting | 642 | 36.6% | 88s | 7 | 0 |
+| /what-we-do/digital-transformation-consulting | 349 | 30.1% | 63s | 1 | 0 |
+| /what-we-do/cfo-consulting | 337 | 21.7% | 72s | 1 | 0 |
+| /what-we-do/m-and-a-consulting | 280 | 40.0% | 72s | 2 | 0 |
+| /who-we-serve/cfo | 205 | 30.2% | 58s | 1 | 0 |
+| /what-we-do/team-continuity | 195 | 39.0% | 69s | 1 | 0 |
+| /who-we-serve/energy-utilities | 193 | 33.2% | 67s | 0 | 0 |
+| /what-we-do/deal-advisory | 179 | 28.5% | 85s | 0 | 0 |
+| /what-we-do/outsourcing-services | 165 | 29.7% | 87s | 0 | 0 |
+| /who-we-serve/healthcare-life-sciences | 151 | 37.7% | 84s | 0 | 0 |
 
-**Why this should work:** Visitors on service pages are evaluating whether Embark can solve their specific problem. They are mid-funnel: interested enough to explore services, but not ready to talk to sales (otherwise they'd be on /contact). Right now, the only next step available is "Talk to an advisor," which requires a commitment jump. A contextual resource download matches the visitor's current intent (learning and evaluation) rather than forcing a premature conversion action. The resource CTAs also create an email capture point that doesn't exist today, feeding the nurture pipeline.
+Across all 30 service/industry pages: **14 total CTA clicks** and **3 form starts** in 90 days. The only CTA clicks tracked are "Contact Us" in the header (14 clicks). There are zero on-page conversion mechanisms.
+
+Traffic sources to service/industry pages:
+
+| Channel | Sessions | Bounce Rate |
+|---|---|---|
+| Direct | 1,812 | 67.8% |
+| Organic Search | 1,449 | 29.4% |
+| Cross-network | 603 | 32.3% |
+| Referral | 208 | 33.7% |
+| Organic Social | 177 | 29.9% |
+| Paid Search | 74 | 39.2% |
+
+Organic Search (1,449 sessions, 29.4% bounce) is the highest-quality channel to these pages. These visitors found Embark through search queries related to specific services, meaning they have active intent. Cross-network (603 sessions, 32.3% bounce) is the PMax retargeting audience arriving on service pages instead of /contact, also showing reasonable engagement. Direct traffic bounces at 67.8%, consistent with the site-wide Direct traffic quality issue.
+
+What visitors do instead of converting: nav menu interaction dominates. 707 nav_dropdown_open events and 334 nav_link_click events across these pages. Top nav destinations from service pages:
+
+| Destination | Clicks |
+|---|---|
+| /team | 53 |
+| /partners | 21 |
+| /careers/overview | 16 |
+| /what-we-do/financial-advisory-consulting | 14 |
+| /what-we-do/cfo-consulting | 13 |
+| /happy-works | 12 |
+
+Visitors are exploring (team page, other services, culture page) rather than converting. They navigate laterally across the site because there's no on-page next step that matches their evaluation intent. The /team and /happy-works clicks are notable: visitors on service pages are looking for "who will actually do the work?" and "what's this company's culture like?" -- both are trust/evaluation signals, not conversion signals.
+
+**Baseline:** ~1,480 combined monthly sessions (excluding Direct noise), 30.5% bounce rate for non-Direct channels, 0% CVR. Zero on-page conversion mechanisms exist. 3 form starts in 90 days across all 30 pages.
+
+**Proposed change:** Add contextual resource download CTAs to service pages, matched to the page's topic. Start with a pilot of the top 5 pages by traffic (2,089 sessions combined = 47% of all service page traffic):
+
+| Pilot Page | Sessions | Matched Resource | Resource CVR |
+|---|---|---|---|
+| /what-we-do/financial-advisory-consulting | 642 | ASC 606 Revenue Recognition Template | 4.2% |
+| /what-we-do/digital-transformation-consulting | 349 | Data Culture Guide | 14.9% |
+| /what-we-do/cfo-consulting | 337 | 13-Week Cash Flow Forecast Model | 12.7% |
+| /what-we-do/m-and-a-consulting | 280 | Post-Merger Integration Checklist | 6.6% |
+| /who-we-serve/cfo | 205 | Quality of Earnings Template | 11.9% |
+
+Each resource already exists, already converts, and is topically relevant to the service page. The CTA block should include: resource title, 1-sentence value prop, and a gated download form (name + email minimum).
+
+For industry pages (phase 2), link to the most relevant case study by industry instead of a resource template. Industry page visitors are more likely responding to "show me you've done this in my vertical" than "give me a generic template."
+
+**Why this should work:** Visitors on service pages are evaluating whether Embark can solve their specific problem. They are mid-funnel: interested enough to explore services, but not ready to talk to sales (otherwise they'd be on /contact). The behavioral data confirms this -- 334 nav clicks show lateral exploration, not conversion intent. The only current next step is the header "Contact Us" button (14 clicks in 90 days = 0.3% click rate). A contextual resource download matches the visitor's current intent (learning and evaluation) rather than forcing a premature conversion action. The resource CTAs also create an email capture point that doesn't exist today, feeding the nurture pipeline.
+
+The pilot approach (5 pages, 47% of traffic) reduces implementation effort while covering the highest-impact pages. If the pilot converts at even 2%, that's ~14 additional leads/month from pages currently generating zero.
 
 **Target metric:** Resource download rate per service page (primary), overall form_submit volume (secondary)
-**Audience:** Mid-funnel evaluators exploring specific service capabilities
+**Audience:** Mid-funnel evaluators exploring specific service capabilities, particularly Organic Search visitors (1,449 sessions, 29.4% bounce)
 
-**Scores:** Impact 5 | Confidence 4 | Ease 3
-Impact 5 because this is the largest pre-sized opportunity (22 est. monthly conversions), addresses 1,834 monthly sessions with zero current conversion, and the performance data tags it as a "large" impact opportunity. Worsening site-wide CVR trend adds urgency. Confidence 4 because the resources already exist and convert well (6.55% group CVR proves the content works), and the structural gap is confirmed by analytics. Ease 3 because this requires adding CTA blocks to 20 pages and selecting the right resource for each, which is moderate design/content effort even though the resources themselves exist.
+**Scores:** Impact 5 | Confidence 4 | Ease 4
+Impact 5 because this is the largest sized opportunity in the analytics: 30 pages with zero conversion mechanism receiving 4,441 sessions/quarter. Even a modest 2% capture rate on the 5-page pilot adds ~14 leads/month. Confidence 4 because the resources already exist and convert well on their own pages (4.2-14.9% CVR), the structural gap is confirmed (14 CTA clicks and 3 form starts in 90 days), and the behavioral data shows visitors are engaged but have no on-page conversion path. Ease 4 (raised from 3) because the pilot scope reduces from 20 pages to 5, all resources already exist, and the CTA block is a repeatable CMS module.
 
-**What a win proves:** Validates the hypothesis that service page visitors will convert on contextual resource offers. This changes the site's conversion architecture: every content page becomes a lead capture point, not just /contact and /resources.
-**What a loss teaches:** Suggests service page visitors are either too early in their journey (awareness, not consideration) or are evaluating competitively and don't want to exchange information yet. The next test would be ungated content offers (case study summaries, comparison data) that build consideration without requiring email capture.
+**What a win proves:** Validates the hypothesis that service page visitors will convert on contextual resource offers. This changes the site's conversion architecture: every content page becomes a lead capture point, not just /contact and /resources. A successful pilot justifies expanding to all 30 pages and building the resource-to-service page mapping for the full site.
+**What a loss teaches:** Suggests service page visitors are either too early in their journey (awareness, not consideration) or are evaluating competitively and don't want to exchange information yet. The nav click data pointing to /team and /happy-works suggests trust-building may be more important than content at this stage. The next test would be ungated content (case study summaries, team bios relevant to the service area) that builds trust without requiring email capture.
 
 ---
 
@@ -288,7 +341,7 @@ Impact 5 because this is the largest pre-sized opportunity (22 est. monthly conv
 **Page:** /what-we-do/financial-advisory-consulting (pilot), then expand to other service pages
 **What to test:** Add differentiation-specific content blocks to the highest-traffic service page, replacing generic capability descriptions with Embark-specific proof and competitive positioning.
 
-**Current state:** The Financial Advisory and Consulting page receives 635 sessions/90 days with 37% bounce. The scorecard analysis flags service sub-pages as drifting to generic copy: "Solving complex business challenges with industry-leading expertise and world-class hospitality." "Industry-leading" is a generic superlative that breaks Embark's own voice rules. The competitive analysis shows 0.50 claim overlap on core services. Service pages read like they could belong to any of the 11 analyzed competitors.
+**Current state:** The Financial Advisory and Consulting page receives 642 sessions/90 days with 36.6% bounce, 88s average session duration, and 7 CTA clicks (all header "Contact Us"). The scorecard analysis flags service sub-pages as drifting to generic copy: "Solving complex business challenges with industry-leading expertise and world-class hospitality." "Industry-leading" is a generic superlative that breaks Embark's own voice rules. The competitive analysis shows 0.50 claim overlap on core services. Service pages read like they could belong to any of the 11 analyzed competitors.
 
 **Baseline:** ~210 sessions/month, 37.0% bounce rate, 0% CVR.
 
