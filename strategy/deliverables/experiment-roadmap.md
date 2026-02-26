@@ -18,7 +18,7 @@ Experiments are grouped into three tiers:
 
 | # | Experiment | Page | Tier | I | C | E | ICE |
 |---|-----------|------|------|---|---|---|-----|
-| 1 | Homepage H1: Outcome Language with Culture Proof | / | Quick Win | 5 | 4 | 5 | 14 |
+| 1 | Homepage Hero: Static Positioning with Optimized Content Offer | / | Quick Win | 5 | 4 | 5 | 14 |
 | 2 | Homepage Proof Strip: Case Study Metrics Above Fold | / | Quick Win | 4 | 4 | 4 | 12 |
 | 3 | Contact Page: Ad-to-Page Messaging Alignment | /contact | Quick Win | 4 | 4 | 4 | 12 |
 | 4 | Service Pages: Contextual Resource CTAs | /what-we-do/* | Strategic Bet | 5 | 4 | 3 | 12 |
@@ -33,35 +33,90 @@ Experiments are grouped into three tiers:
 
 ## Quick Wins
 
-### 1. Homepage H1: Outcome Language with Culture Proof
+### 1. Homepage Hero: Static Positioning with Optimized Content Offer
 
 **Page:** Homepage (/)
-**What to test:** Replace the generic homepage headline with a differentiated, outcome-oriented headline that surfaces Embark's unique culture proof.
+**What to test:** Replace the 3-slide hero carousel with a static hero that combines differentiated positioning copy with a single high-converting content offer.
 
 **Current state:** The homepage H1 reads "High-impact consulting for growing companies." This is a line any advisory firm could use. The subhead ("At Embark, we help ambitious businesses scale into their next chapter with strategic guidance and hands-on support") reinforces generic positioning. The homepage carousel rotates between this positioning slide and two resource promotions (an accounting template and an audit preparation guide), which further dilutes the first impression.
 
+**Carousel engagement data (90-day GA4 pull, 2025-11-28 to 2026-02-25):**
+
+The homepage received 21,596 page views from 15,646 users over this period. Carousel interaction is near-zero:
+
+| Metric | Events | Unique Users | Rate (of 15,646 users) |
+|---|---|---|---|
+| Slide navigation (arrow/dot clicks) | 256 | 92 | 0.6% |
+| Hero CTA clicks (all slides combined) | 129 | ~111 | 0.7% |
+
+Slide navigation by index:
+- Slide 0 (main positioning): 115 events / 74 users
+- Slide 1 (template download): 73 events / 45 users
+- Slide 2 (guide download): 68 events / 46 users
+
+Hero CTA clicks by label:
+- "What we do" (Slide 1): 78 clicks / 73 users
+- "Download the template" (Slide 2): 30 clicks / 18 users
+- "Talk to an advisor" (Slide 1): 12 clicks / 11 users
+- "Download the guide" (Slide 3): 9 clicks / 9 users
+
+For comparison, the header "Contact Us" button received 78 clicks and nav menu links received 857 total clicks from the same page. Visitors are bypassing the hero entirely and using the navigation.
+
+**The carousel is promoting the wrong content.** The two resources featured in Slides 2-3 are among the lowest-converting content on the site:
+
+| Resource | Sessions | Form Submits | CVR | Hero Placement |
+|---|---|---|---|---|
+| Post-Merger Integration Checklist | 1,266 | 84 | 6.6% | Not in carousel |
+| 13-Week Cash Flow Forecast | 401 | 51 | 12.7% | Not in carousel |
+| Quality of Earnings Template | 227 | 27 | 11.9% | Not in carousel |
+| ASC 606 Revenue Recognition Template | 760 | 32 | 4.2% | Not in carousel |
+| Controller Transition Template (Slide 2) | 126 | 8 | 6.3% | **In carousel** |
+| External Audit Prep Guide (Slide 3) | 140 | 5 | 3.6% | **In carousel** |
+
+The two carousel resources generated 13 combined form submits in 90 days. The top 3 resources (none of which are in the hero) generated 162 form submits. A previous test of a butterbar (top banner) to replace carousel content promotion showed the carousel converting better, but the carousel's absolute performance is still very low: 39 content download clicks from the hero in 90 days.
+
+**Important context:** Content downloads drive a majority of Embark's leads historically. The issue is not whether content should be promoted prominently, but that the current carousel (a) promotes the wrong resources and (b) uses a format with a 0.6% interaction rate that hides slides 2-3 from 99.4% of visitors.
+
 **Baseline:** ~6,700 sessions/month, 59.5% bounce rate, 0% conversion rate. Direct traffic (11,438 sessions) bounces at 74.5% vs Organic Search at 37.5%.
 
-**Proposed change:** Replace the carousel with a single, static hero. Lead with a headline that communicates Embark's actual differentiation: the combination of Big 4 Alumni talent and a culture that retains them.
+**Proposed variants (test one):**
 
-> **Before:** "High-impact consulting for growing companies"
-> **After:** "Big 4 Alumni advisors who stay, execute, and care. NPS 93."
+**Option A -- Static hero with single best content offer:**
+Replace the carousel with a static hero combining the positioning headline with a single CTA for the Post-Merger Integration Checklist (the highest-volume converter at 84 submits/90 days, 6.6% CVR).
 
-The subhead shifts from aspiration to proof:
+> **Before:** 3-slide carousel cycling generic positioning + two low-performing resource offers
+> **After:** Static hero with "Big 4 Alumni advisors who stay, execute, and care. NPS 93." headline + primary CTA "Download the Post-Merger Integration Checklist" + secondary CTA "Book a 15-Minute Intro Call"
 
-> **Before:** "At Embark, we help ambitious businesses scale into their next chapter with strategic guidance and hands-on support."
-> **After:** "9% consultant attrition. 91% client retention. 26 offices. We deploy senior financial advisors and stay until the work is done."
+Rationale: Concentrates hero real estate on one proven resource instead of splitting across three slides that nobody navigates. The PMI Checklist already pulls 1,266 organic sessions on its own page, proving market demand.
 
-**Why this should work:** B2B buyers scanning above the fold decide in 3-5 seconds whether a page is relevant. "High-impact consulting" forces the visitor to do cognitive work: what kind of consulting? For whom? The proposed headline self-qualifies financial advisory buyers immediately and communicates something no competitor can claim (NPS 93). The static hero also eliminates the carousel, which currently cycles away from the positioning message within seconds to promote downloadable templates. Removing the carousel increases the dwell time on the core value proposition.
+**Option B -- Static positioning hero + rotating content offer CTA:**
+Keep the hero headline and subhead static (no full-slide rotation), but rotate just the content offer CTA below the positioning copy. Test the top 3 resources in rotation: PMI Checklist vs. Cash Flow Forecast vs. Quality of Earnings Template.
 
-**Target metric:** Bounce rate (primary), scroll depth and /contact click-through (secondary)
+> **Before:** Full carousel rotating entire hero sections
+> **After:** Fixed positioning copy with a single rotating content CTA strip beneath it
+
+Rationale: Preserves the content lead gen mechanism Embark values while eliminating the positioning dilution of the full carousel. Tests which resource resonates best from the hero position.
+
+**Option C -- Static hero with content promotion moved below the fold:**
+Static hero with positioning copy only. Move content promotion to a dedicated module immediately below the hero fold (featured resource card or sticky banner). This separates the jobs of "communicate who Embark is" (hero) from "capture leads via content" (below-fold module).
+
+> **Before:** Hero tries to do both positioning and lead gen, does neither well
+> **After:** Hero owns positioning. Below-fold module owns content lead gen with the top-performing resource.
+
+Rationale: The hero's primary job should be reducing the 59.5% bounce rate by communicating relevance in 3-5 seconds. Content promotion can happen immediately below the fold where engaged visitors (the 40.5% who don't bounce) are more likely to act. This is the cleanest separation of concerns but the most different from current state, which may face internal resistance.
+
+**Recommended variant:** Option A. It's the smallest change from current behavior (hero still has a content download CTA), addresses the client's concern about content-driven leads, swaps in a resource that actually converts, and adds the differentiated positioning copy. Options B and C are viable follow-ups depending on results.
+
+**Why this should work:** B2B buyers scanning above the fold decide in 3-5 seconds whether a page is relevant. "High-impact consulting" forces the visitor to do cognitive work: what kind of consulting? For whom? The proposed headline self-qualifies financial advisory buyers immediately and communicates something no competitor can claim (NPS 93). Replacing the carousel with a static hero eliminates a format that 99.4% of visitors ignore. Swapping in the PMI Checklist (84 submits) for the Controller Transition Template (8 submits) and External Audit Prep Guide (5 submits) puts a proven lead magnet in the hero position.
+
+**Target metric:** Bounce rate (primary), hero CTA click-through rate and form_submit volume (secondary), content download volume (guardrail -- must not decrease site-wide content leads)
 **Audience:** All visitors, with particular importance for Direct traffic where the 74.5% bounce rate indicates first-impression failure
 
 **Scores:** Impact 5 | Confidence 4 | Ease 5
-Impact 5 because this is the highest-traffic page on the site (20K sessions/90 days) and the scorecard identifies Clarity as the top opportunity. Homepage bounce worsened 13.5pp vs the prior period. Confidence 4 because the before state is exact copy from the website, the after copy is adapted from the messaging analysis's channel adaptations, and traffic adequacy is high. Ease 5 because this is a text change in the CMS hero module.
+Impact 5 because this is the highest-traffic page on the site (20K sessions/90 days) and the scorecard identifies Clarity as the top opportunity. Homepage bounce worsened 13.5pp vs the prior period. Confidence 4 because the carousel engagement data directly validates the problem (0.6% nav rate, wrong resources promoted), the before state is exact copy from the website, the replacement resource has proven conversion data, and traffic adequacy is high. Ease 5 because this is a text change and resource swap in the CMS hero module.
 
-**What a win proves:** Validates that Embark's culture proof (NPS, attrition, retention) is a stronger lead message than generic category language. This would inform all downstream pages, ad copy, and sales collateral: lead with the numbers, not the aspiration.
-**What a loss teaches:** Suggests visitors scanning the homepage respond more to broad category framing than specific proof claims. This would indicate Embark's brand awareness is too low to lead with metrics (visitors need to understand what the company does before they care how well it does it). Pivot to testing a "category clarity first, proof second" hierarchy.
+**What a win proves:** Validates two things simultaneously: (1) that differentiated positioning copy outperforms generic category language in the hero, and (2) that a static hero with one high-converting resource outperforms a carousel promoting low-converting resources. This informs all downstream page design: lead with proof, promote proven content, stop hiding offers behind carousels.
+**What a loss teaches:** If bounce rate doesn't improve but content downloads hold steady, the positioning copy needs work but the static format is fine. If content downloads drop, hero placement genuinely matters for content lead gen and the below-fold approach (Option C) should be tested next. If both metrics decline, the carousel format itself may have value that the engagement data doesn't capture (e.g., auto-rotation exposing offers to passive viewers), and the issue is purely about which resources are promoted -- swap the carousel content to top performers without changing the format.
 
 ---
 
@@ -127,9 +182,9 @@ Impact 4 because the opportunity sizing estimates 7-8 additional conversions per
 **Page:** Homepage (/)
 **What to test:** Replace vague CTA language with specific, expectation-setting action language.
 
-**Current state:** The homepage has two CTAs: "What we do" (navigational, sends visitors to services overview) and "Talk to an advisor" (conversion intent). "Talk to an advisor" recorded only 15 clicks in 90 days across the entire site. "What we do" is navigational, not conversion-oriented. Neither CTA communicates what happens next or reduces the fear of unknown commitment.
+**Current state:** The homepage has two CTAs: "What we do" (navigational, sends visitors to services overview) and "Talk to an advisor" (conversion intent). GA4 data (90-day pull) shows hero CTA clicks: "What we do" at 78 clicks (73 users), "Talk to an advisor" at 12 clicks (11 users). Neither CTA communicates what happens next or reduces the fear of unknown commitment.
 
-**Baseline:** ~6,700 sessions/month. "Talk to an advisor" CTA: 15 clicks in 90 days (0.02% click rate). 0% homepage conversion rate.
+**Baseline:** ~6,700 sessions/month. Hero CTA combined click rate: 0.7% of homepage users (129 clicks / 15,646 users). "Talk to an advisor" specifically: 12 clicks in 90 days (0.08% click rate). 0% homepage conversion rate.
 
 **Proposed change:** Replace both CTAs with a clear primary/secondary hierarchy.
 
