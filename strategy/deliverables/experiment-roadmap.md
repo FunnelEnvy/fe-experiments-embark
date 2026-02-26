@@ -20,7 +20,7 @@ Experiments are grouped into three tiers:
 |---|-----------|------|------|---|---|---|-----|
 | 1 | Homepage Hero: Static Positioning with Optimized Content Offer | / | Quick Win | 5 | 4 | 5 | 14 |
 | 2 | Homepage Proof Strip: Case Study Metrics Above Fold | / | Quick Win | 4 | 4 | 4 | 12 |
-| 3 | Contact Page: Ad-to-Page Messaging Alignment | /contact | Quick Win | 4 | 4 | 4 | 12 |
+| 3 | Contact Page: PMax Retargeting Form Completion + Mobile Optimization | /contact | Quick Win | 4 | 4 | 3 | 11 |
 | 4 | Service Pages: Contextual Resource CTAs | /what-we-do/* | Strategic Bet | 5 | 4 | 3 | 12 |
 | 5 | Homepage CTA: Specific Action Language | / | Quick Win | 4 | 4 | 5 | 13 |
 | 6 | Service Page Differentiation Injection | /what-we-do/financial-advisory-consulting | Strategic Bet | 4 | 3 | 4 | 11 |
@@ -150,30 +150,77 @@ Impact 4 because this directly addresses the top positioning gap (Specificity) o
 
 ---
 
-### 3. Contact Page: Ad-to-Page Messaging Alignment
+### 3. Contact Page: PMax Retargeting Form Completion + Mobile Optimization
 
 **Page:** /contact
-**What to test:** Align contact page headline and supporting copy with the messaging visitors see in paid ad campaigns (Cross-network/Google Ads).
+**What to test:** Improve form completion rate for retargeted Cross-network visitors, with emphasis on mobile form UX.
 
-**Current state:** Cross-network campaigns (Google Ads Performance Max, Demand Gen) drive 3,084 sessions to /contact over 90 days but convert at only 0.42% (unified CVR). Direct traffic to the same page converts at 2.24%, a 5.3x gap. This is the largest conversion gap identified in the analytics, and the /contact page is the single bottom-of-funnel conversion point for the entire site (98% of contact form submissions happen here).
+**Current state (90-day GA4 pull, 2025-11-28 to 2026-02-25):**
 
-**Baseline:** ~1,480 sessions/month, 63.1% bounce rate, 1.19% CVR (form_submit). Cross-network bounce is higher than Direct on this page.
+The /contact page received 3,684 sessions over the period. Cross-network traffic dominates at 81% of all sessions, and virtually all of it (3,034 of 2,986 Cross-network sessions) comes from a single campaign: **"Performance Max - Handraisers - Retargeting."** These are not cold prospects -- they are previous site visitors being retargeted back to /contact.
 
-**Proposed change:** Add a dynamic or A/B-tested headline on /contact that echoes the value proposition from paid campaigns. If Cross-network ads reference financial advisory, audit readiness, or CFO services, the contact page should reinforce that language rather than presenting a generic "Contact Us" experience.
+Traffic and conversion by channel:
 
-> **Before:** Generic contact form with no value reinforcement specific to the ad source
-> **After:** "Ready to close the gap in your finance function? Talk to an advisor who's done it for companies like yours." Add a contextual proof point near the form: "91% of clients stay with Embark year over year."
+| Channel | Sessions | Bounce Rate | Form Starts | Form Submits | Start Rate | Completion Rate |
+|---|---|---|---|---|---|---|
+| **Cross-network** | 2,986 | 72.0% | 149 | 18 | 5.0% | **12.1%** |
+| **Direct** | 418 | 87.8% | 33 | 17 | 7.9% | **51.5%** |
+| **Organic Search** | 191 | 52.9% | 15 | 7 | 7.9% | **46.7%** |
+| Referral | 47 | 53.2% | 8 | 3 | 17.0% | 37.5% |
+| Paid Search | 3 | 66.7% | 4 | 3 | -- | -- |
+| **Total** | ~3,684 | -- | 214 | 49 | 5.8% | **22.9%** |
 
-**Why this should work:** Paid visitors arrive with a specific expectation set by the ad creative. When the landing page doesn't reinforce that expectation, there's a cognitive mismatch: "Did I click the right link?" The 5.3x CVR gap between Direct (visitors who sought out the site intentionally) and Cross-network (visitors responding to ad messaging) is a textbook ad-to-page alignment failure. Matching contact page language to ad messaging reduces the expectation gap and maintains the visitor's momentum from ad click to form submission.
+The critical finding: **form completion rate, not form start rate, is where Cross-network traffic falls apart.** Cross-network visitors start forms at a reasonable 5.0% rate (149 starts from 2,986 sessions), but only 12.1% of those starters finish (18 submits). Direct visitors complete at 51.5% (17 of 33 starters). That's a **4.3x form completion gap**, which is a stronger and more actionable signal than the overall CVR gap.
 
-**Target metric:** form_submit rate on /contact for Cross-network traffic (primary), overall /contact CVR (secondary)
-**Audience:** Paid traffic visitors arriving via Google Ads campaigns
+Device breakdown for Cross-network /contact traffic:
 
-**Scores:** Impact 4 | Confidence 4 | Ease 4
-Impact 4 because the opportunity sizing estimates 7-8 additional conversions per month from closing this gap, and contact form submissions are the bottom-of-funnel action. Confidence 4 because the source-page mismatch data is specific and the gap is large enough to produce a measurable result. Ease 4 because this is primarily a copy change with an optional proof element, though coordinating with ad campaign messaging requires cross-team alignment.
+| Device | Sessions | % of Cross-network | Bounce Rate |
+|---|---|---|---|
+| Mobile | 2,123 | 71% | 70.8% |
+| Desktop | 559 | 19% | 66.5% |
+| Tablet | 393 | 13% | 66.2% |
 
-**What a win proves:** Validates that the paid-to-page messaging gap is the primary conversion barrier for paid traffic. This learning applies to every future landing page built for paid campaigns: match the promise.
-**What a loss teaches:** Suggests the conversion gap is not a messaging problem but a traffic quality problem (Cross-network campaigns may be targeting low-intent audiences). Investigate campaign targeting and audience quality before further page optimization.
+The PMax retargeting campaign sends 71% mobile traffic. Mobile Direct visitors to /contact bounce at 93.2%. The form likely has a mobile UX problem independent of messaging.
+
+**Reframing the hypothesis:** The original hypothesis assumed an ad-to-page messaging mismatch: cold paid visitors hitting a generic contact page. The data tells a different story. These are retargeted visitors who already know Embark. They've been to the site before, got served a PMax ad, clicked back to /contact, and 72% still bounced. Of the 5% who started the form, nearly 88% abandoned it. The problem is less "did I click the right link?" and more "why should I finish this form right now, on my phone?"
+
+**Baseline:** ~1,230 sessions/month, 72.0% bounce for Cross-network, 0.60% Cross-network CVR. 49 total form submits in 90 days across all channels. Form completion rate for Cross-network: 12.1% vs. Direct at 51.5%.
+
+**Proposed variants (test one, prioritized by data signal strength):**
+
+**Option A -- Mobile form optimization (recommended):**
+Reduce form friction specifically for mobile visitors, who represent 71% of Cross-network traffic. This could include: reducing field count, enabling autofill-friendly field types, breaking the form into a multi-step flow (name/email first, details second), or adding a "Call Us" alternative for mobile visitors who won't type on a phone.
+
+> **Before:** Same form experience on mobile and desktop
+> **After:** Mobile-optimized form with fewer fields, larger tap targets, and/or a click-to-call alternative
+
+Rationale: The 4.3x form completion gap is the strongest signal. Mobile visitors start the form but can't or won't finish it. Fixing the form for 2,123 mobile sessions/quarter has a larger potential impact than messaging changes. If the current form has 5+ fields, reducing to 3 (name, email, company) on mobile could meaningfully close the completion gap. **Prerequisite: audit the /contact form field count and structure.**
+
+**Option B -- Retargeting-specific messaging + value reinforcement:**
+Since these are returning visitors, the page copy should acknowledge their familiarity rather than introduce Embark from scratch. Add a contextual proof point near the form and a headline that reinforces why they should take the next step now.
+
+> **Before:** Generic "Contact Us" with no value reinforcement
+> **After:** "Ready to close the gap in your finance function? Talk to an advisor who's done it for companies like yours." + proof point: "91% of clients stay with Embark year over year."
+
+Rationale: Even though messaging mismatch is less likely for retargeted visitors, the /contact page is still generic. Adding a reason to convert now (social proof, reduced commitment language) could improve both form start rate and completion rate. This is additive to Option A.
+
+**Option C -- Combined: mobile form optimization + messaging reinforcement:**
+Run Options A and B together as a single variant. Reduce form friction on mobile AND add retargeting-aware messaging/proof. This maximizes the chance of a measurable result but makes it harder to isolate which change drove the improvement.
+
+Rationale: With only 18 Cross-network form submits in 90 days, the base conversion volume is low. Running a subtle single-variable test may not reach significance in a reasonable timeframe. Combining changes increases the effect size at the cost of attribution clarity. Given the low base, this is the pragmatic choice if the team can only run one test.
+
+**Recommended variant:** Option A if form audit reveals 5+ fields or mobile UX issues. Option C if the form is already short and the team wants to maximize signal. Option B alone is the weakest bet because the primary bottleneck is form completion, not form starts.
+
+**Why this should work:** The data shows that the funnel breaks at form completion, not at page engagement or form initiation. Cross-network visitors start forms at 5.0% (comparable to other channels) but complete at 12.1% (vs. 51.5% for Direct). The 71% mobile skew of the PMax campaign means most form interactions happen on a phone, where form friction is highest. Reducing mobile form friction directly addresses the widest gap in the conversion funnel. The retargeting context also means these visitors have already expressed interest -- they are warm leads losing motivation at the last step.
+
+**Target metric:** Form completion rate for Cross-network mobile traffic (primary), overall /contact form_submit volume (secondary), form start rate (guardrail -- should not decrease)
+**Audience:** Cross-network retargeted visitors, particularly mobile (71% of PMax traffic)
+
+**Scores:** Impact 4 | Confidence 4 | Ease 3
+Impact 4 because the opportunity sizing is clear: 149 form starts with only 18 completions means 131 abandoned forms in 90 days. Even closing half that gap adds ~7 conversions/month from a retargeted (warm) audience. Confidence 4 because the form completion gap (12.1% vs 51.5%) is large and the mobile skew provides a clear causal hypothesis. The single-campaign concentration (PMax Retargeting = 99% of Cross-network) means changes will be testable against a consistent traffic source. Ease 3 (reduced from 4) because mobile form optimization may require development work beyond simple copy changes, and the form audit is a prerequisite.
+
+**What a win proves:** Validates that the /contact conversion bottleneck is form UX (especially mobile), not messaging or traffic quality. This informs all form-based conversion points across the site and justifies mobile-first form design for any future landing pages receiving PMax traffic.
+**What a loss teaches:** If form completion doesn't improve despite mobile optimization, the problem is upstream of the form: either the PMax retargeting audience is low-quality (clicking ads without real intent) or visitors are landing on /contact but deciding Embark isn't the right fit during form interaction. Next step would be auditing the PMax campaign audience signals, placement quality, and whether /contact is the right landing page for retargeting (vs. a resource download page with lower commitment).
 
 ---
 
@@ -380,7 +427,7 @@ Impact 5 because personalization on the highest-traffic page, applied to the lar
 
 **Start with the homepage.** Experiments 1 (H1 headline), 2 (proof strip), and 5 (CTA language) all target the homepage and can be run in a phased sequence: headline first, then proof strip, then CTA. The headline test is foundational because it establishes whether outcome-oriented language with culture proof outperforms generic positioning. Every downstream experiment assumes this direction. If the headline loses, the messaging strategy shifts to category-clarity-first, which changes the proof strip and CTA approaches. Run the headline test for at least 2-3 weeks before layering on the proof strip.
 
-**Contact page optimization (Experiment 3) runs in parallel.** It targets a different page and a specific audience segment (paid traffic), so it doesn't confound with homepage tests. The ad-to-page alignment test is also time-sensitive because the Cross-network conversion gap represents an ongoing waste of paid media budget.
+**Contact page optimization (Experiment 3) runs in parallel.** It targets a different page and a specific audience segment (PMax retargeting traffic), so it doesn't confound with homepage tests. The form completion optimization is time-sensitive because the PMax "Handraisers - Retargeting" campaign is sending ~1,000 mobile sessions/month to /contact with an 88% form abandonment rate -- every month without a fix is wasted retargeting spend. **Prerequisite:** audit the /contact form fields before designing the variant.
 
 **Service page CTAs (Experiment 4) should start after the homepage direction is validated.** If the homepage headline test confirms that proof-forward messaging works, the service page CTAs should emphasize proof-aligned resources. If the headline test reveals that category clarity is more effective, the service page CTAs should lean into explainer content. Start with 3-5 high-traffic service pages as a pilot before expanding to all 20 pages.
 
@@ -414,10 +461,10 @@ Impact 5 because personalization on the highest-traffic page, applied to the lar
 
 ### Missing Baseline Data
 
-- **Contact form field count and structure.** The form on /contact has not been directly audited for field count, field types, or form completion funnel. This prevents evaluation of form field reduction and multi-step form conversion experiments. **Action:** Audit the /contact form manually. Count fields, note types (text, dropdown, checkbox), and check for required vs. optional fields.
+- **Contact form field count and structure (BLOCKING for Experiment 3).** The form on /contact has not been directly audited for field count, field types, or form completion funnel. GA4 data shows a 4.3x form completion gap between Cross-network (12.1%) and Direct (51.5%) visitors, with 71% of Cross-network traffic arriving on mobile. This makes form audit the top prerequisite. **Action:** Audit the /contact form manually. Count fields, note types (text, dropdown, checkbox), check for required vs. optional fields, and test the form on a mobile device to assess UX friction.
 - **Enhanced measurement is disabled.** Scroll, click, and file_download events report zero in the current 90-day period (previously active at 36,708 scroll events, 5,207 click events, 645 file_downloads). This eliminates engagement signal data for all pages and prevents scroll depth analysis for Experiments 1, 2, and 6. **Action:** Re-enable enhanced measurement in GA4 immediately. This is not optional for running CRO experiments, as it provides the engagement data needed to interpret test results.
 - **Direct traffic quality.** Direct traffic (54.5% of all sessions) has an 85.2% bounce rate (up from 69.5% prior period). This is anomalous for legitimate direct traffic. Before optimizing the homepage for Direct visitors (Experiment 1), determine whether this traffic is real. **Action:** Check for bot traffic patterns, review referral exclusion settings, audit internal/CMS preview traffic leakage (/_hcms/preview/* accounted for 952 sessions), and investigate whether HubSpot CTA redirects (/cs/c/) are inflating Direct attribution.
-- **Ad campaign creative and UTM structure.** Experiments 3 (ad-to-page alignment) and 10 (segment personalization) require knowledge of current ad messaging and UTM parameter conventions. **Action:** Export current Google Ads campaign creatives and UTM parameter taxonomy.
+- **Ad campaign creative and UTM structure.** Experiment 10 (segment personalization) requires knowledge of current ad messaging and UTM parameter conventions. GA4 data confirms the primary campaign driving /contact traffic is "Performance Max - Handraisers - Retargeting" (3,034 sessions/90 days, 99% of Cross-network). **Action:** Export current Google Ads campaign creatives, review PMax asset groups and audience signals for the Handraisers campaign, and document UTM parameter taxonomy for personalization targeting.
 
 ### Context Verification Needed
 
