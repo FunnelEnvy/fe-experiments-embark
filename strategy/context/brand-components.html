@@ -1,0 +1,1498 @@
+<!--
+  Embark Brand Component Library v1.0
+  Source: brand-design-system.md + embarkwithus.com CSS audit + Figma extraction
+  Updated: 2026-03-08
+
+  PURPOSE: Ready-to-use HTML/CSS snippets for landing page assembly.
+  The design agent should compose pages by selecting and adapting these
+  components rather than building from abstract token specs.
+
+  FONT NOTE: Embark Sans is a bespoke font. Use DM Sans as the prototype
+  substitute. Load via Google Fonts:
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet">
+
+  LOGO URLs (IMPORTANT: use na2 not na1 to avoid redirect):
+  Black: https://8725594.fs1.hubspotusercontent-na2.net/hubfs/8725594/Embark2024/images/Embark-Primary%20Logotype-Black.svg
+  White: https://8725594.fs1.hubspotusercontent-na2.net/hubfs/8725594/Embark2024/images/embark_logo.svg
+  Black PNG fallback: https://www.embarkwithus.com/hs-fs/hubfs/Embark-Primary%20Logotype-Black-RGB.png?width=338&height=70
+
+  CLIENT LOGOS (use these real SVGs, never text placeholders):
+  GameStop:      https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/gamestop.svg
+  SLB:           https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/slb.svg
+  HelloFresh:    https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/hellofresh.svg
+  Aimbridge:     https://www.embarkwithus.com/hubfs/aimbridge-2.svg
+  TGI Fridays:   https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/tgi-fridays.svg
+  Neiman Marcus: https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/neiman-marcus.svg
+  Daseke:        https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/daseke.svg
+
+  RULE: NEVER use text placeholders for logos. Always use real image assets from the URLs above.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embark Component Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&display=swap" rel="stylesheet">
+  <style>
+    /* ================================================================
+       EMBARK DESIGN TOKENS
+       Copy this entire :root block into every landing page.
+       ================================================================ */
+    :root {
+      /* Brand palette */
+      --ink: #000000;
+      --paper: #FFFFFF;
+      --bubblegum: #F277C6;
+      --sky: #5BC2E7;
+      --cherry: #F9423A;
+      --spring: #00B74F;
+      --sunny: #FEDD00;
+      --fire: #FF8200;
+      --electric: #027FF1;
+
+      /* Functional */
+      --nav-blue: #0074DD;
+      --sea: #0047BB;
+      --text-default: #2F3031;
+      --text-inverse: #FFFFFF;
+      --text-muted: #8F857B;
+      --stroke: #BFB6AD;
+      --border-subdued: #C9CBCF;
+      --sand: #EDE8E3;
+
+      /* Typography */
+      --font-headline: 'DM Sans', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+
+      /* Shadows */
+      --shadow-sm: 0px 1px 2px 0px rgba(0,0,0,0.05);
+
+      /* Layout */
+      --page-max: 1440px;
+      --content-max: 1280px;
+      --section-pad-desktop: 60px 80px;
+      --section-pad-mobile: 40px 16px;
+    }
+
+    /* ================================================================
+       BASE RESET (include once per page)
+       ================================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: var(--font-body);
+      background: var(--paper);
+      color: var(--text-default);
+      line-height: 1.4;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+
+    /* ================================================================
+       UTILITY: Page wrapper
+       All content sections sit inside this. Max 1440px centered.
+       ================================================================ */
+    .embark-page { max-width: var(--page-max); margin: 0 auto; }
+
+
+    /* ================================================================
+       COMPONENT: Navigation Bar (Desktop - Blue variant)
+       Width: 800px centered, pill-bottom shape, sits at top of page.
+       Use white variant on pages with dark hero backgrounds.
+       ================================================================ */
+    .embark-nav-wrap {
+      display: flex;
+      justify-content: center;
+      padding-top: 0;
+      position: relative;
+      z-index: 100;
+    }
+    .embark-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 800px;
+      max-width: 100%;
+      height: 40px;
+      padding: 0 30px;
+      background: var(--nav-blue);
+      border-radius: 0 0 10px 10px;
+      gap: 10px;
+    }
+    .embark-nav--white {
+      background: var(--paper);
+    }
+    .embark-nav__logo img,
+    .embark-nav__logo svg {
+      height: 20px;
+      width: auto;
+    }
+    .embark-nav__links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      list-style: none;
+    }
+    .embark-nav__links a {
+      font-family: var(--font-body);
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: var(--text-inverse);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .embark-nav--white .embark-nav__links a {
+      color: var(--text-default);
+    }
+    .embark-nav__links a:hover {
+      text-decoration: underline;
+    }
+    /* Hide nav links on mobile, show hamburger */
+    @media (max-width: 767px) {
+      .embark-nav {
+        width: 100%;
+        height: 60px;
+        padding: 0 16px;
+      }
+      .embark-nav__links { display: none; }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Hero Section (Split layout)
+       Left: headline + sub + CTA. Right: image (absolute positioned).
+       This is the primary hero pattern from embarkwithus.com.
+       Image area is 659x858 on desktop, cover-fit.
+       ================================================================ */
+    .embark-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 600px;
+      padding: 96px 80px 80px;
+      position: relative;
+      overflow: hidden;
+      background: var(--paper);
+    }
+    .embark-hero__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      max-width: 560px;
+      z-index: 2;
+    }
+    .embark-hero__eyebrow {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.0125em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .embark-hero__headline {
+      font-family: var(--font-headline);
+      font-size: 60px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .embark-hero__sub {
+      font-family: var(--font-body);
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--text-default);
+    }
+    .embark-hero__image {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      z-index: 1;
+    }
+    .embark-hero__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Hero image placeholder for prototypes (no real image) */
+    .embark-hero__image--placeholder {
+      background: var(--sand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    @media (max-width: 767px) {
+      .embark-hero {
+        grid-template-columns: 1fr;
+        padding: 40px 16px 40px;
+        min-height: auto;
+      }
+      .embark-hero__headline {
+        font-size: 44px;
+        line-height: 1.2;
+      }
+      .embark-hero__sub { font-size: 18px; }
+      .embark-hero__image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 32px;
+      }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Hero Section (Centered, no image)
+       For landing pages where full-bleed imagery isn't available.
+       White background, centered text, generous whitespace.
+       ================================================================ */
+    .embark-hero--centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 96px 80px 64px;
+      background: var(--paper);
+    }
+    .embark-hero--centered .embark-hero__content {
+      align-items: center;
+      max-width: 720px;
+    }
+    @media (max-width: 767px) {
+      .embark-hero--centered {
+        padding: 48px 16px 40px;
+      }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Buttons
+       All sizes. Primary, secondary, ghost variants.
+       Always pill-shaped (border-radius: 100px).
+       ================================================================ */
+
+    /* Primary button - nav-blue bg, white text */
+    .embark-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: none;
+      border-radius: 100px;
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.1;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .embark-btn:focus-visible {
+      outline: 2px solid var(--nav-blue);
+      outline-offset: 2px;
+    }
+
+    /* Size: Large (default for hero CTAs) */
+    .embark-btn--L {
+      height: 52px;
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+    /* Size: Medium (default for section CTAs) */
+    .embark-btn--M {
+      height: 40px;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+    /* Size: Small */
+    .embark-btn--S {
+      height: 32px;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    /* Size: XS */
+    .embark-btn--XS {
+      height: 32px;
+      padding: 10px 20px;
+      font-size: 12px;
+    }
+
+    /* Type: Primary (blue bg) */
+    .embark-btn--primary {
+      background: var(--nav-blue);
+      color: var(--text-inverse);
+    }
+    .embark-btn--primary:hover {
+      background: var(--sea);
+    }
+
+    /* Type: Secondary (outline) */
+    .embark-btn--secondary {
+      background: transparent;
+      color: var(--nav-blue);
+      border: 2px solid var(--nav-blue);
+    }
+    .embark-btn--secondary:hover {
+      background: var(--nav-blue);
+      color: var(--text-inverse);
+    }
+    .embark-btn--secondary.embark-btn--S,
+    .embark-btn--secondary.embark-btn--XS {
+      border-width: 1px;
+    }
+
+    /* Type: Ghost (text link with hover underline) */
+    .embark-btn--ghost {
+      background: transparent;
+      border: none;
+      color: var(--nav-blue);
+      padding: 0 0 4px;
+      height: auto;
+      border-bottom: 2px solid transparent;
+    }
+    .embark-btn--ghost:hover {
+      border-bottom-color: var(--bubblegum);
+    }
+
+    /* Type: Primary on dark bg (inverted - white bg, blue text) */
+    .embark-btn--inverted {
+      background: var(--paper);
+      color: var(--nav-blue);
+    }
+    .embark-btn--inverted:hover {
+      background: var(--sand);
+    }
+
+    /* Button with arrow icon (use SVG inline or >) */
+    .embark-btn__icon {
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    /* Full-width on mobile */
+    @media (max-width: 767px) {
+      .embark-btn--fullmobile {
+        width: 100%;
+      }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Logo Bar / Social Proof Strip
+       Electric blue background, centered logos.
+       Used for client logo displays.
+       ================================================================ */
+    .embark-logobar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 80px;
+      padding: 0 80px;
+      height: 200px;
+      background: var(--electric);
+    }
+    .embark-logobar img {
+      height: 32px;
+      width: auto;
+      opacity: 0.9;
+      filter: brightness(0) invert(1); /* makes logos white */
+    }
+    /* Alternative: light bg version for landing pages */
+    .embark-logobar--light {
+      background: var(--paper);
+      border-top: 1px solid var(--stroke);
+      border-bottom: 1px solid var(--stroke);
+      height: auto;
+      padding: 40px 80px;
+    }
+    .embark-logobar--light img {
+      filter: none;
+      opacity: 0.5;
+    }
+    .embark-logobar__label {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.0125em;
+      color: var(--text-muted);
+    }
+    /* Stacked variant: label on top, logos below */
+    .embark-logobar--stacked {
+      flex-direction: column;
+      gap: 24px;
+      height: auto;
+      padding: 48px 80px;
+    }
+    .embark-logobar--stacked .embark-logobar__logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    /* Client logos in logo bar */
+    .embark-client-logo {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.6;
+      transition: opacity 0.15s ease;
+    }
+    .embark-client-logo:hover {
+      opacity: 1;
+    }
+    .embark-logobar--light .embark-client-logo {
+      /* Muted on light bg, darken on hover */
+      filter: grayscale(100%);
+    }
+    .embark-logobar--light .embark-client-logo:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+    @media (max-width: 767px) {
+      .embark-logobar,
+      .embark-logobar--stacked {
+        padding: 32px 16px;
+        gap: 20px;
+      }
+      .embark-logobar--stacked .embark-logobar__logos {
+        gap: 24px;
+      }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Section (generic content section)
+       Standard padding, optional Sand or Sunny background.
+       ================================================================ */
+    .embark-section {
+      padding: var(--section-pad-desktop);
+      max-width: var(--page-max);
+      margin: 0 auto;
+    }
+    .embark-section--sand { background: var(--sand); }
+    .embark-section--sunny { background: var(--sunny); }
+    .embark-section--electric { background: var(--electric); color: var(--text-inverse); }
+    .embark-section--paper { background: var(--paper); }
+
+    .embark-section__eyebrow {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.0125em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .embark-section__heading {
+      font-family: var(--font-headline);
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+    .embark-section--electric .embark-section__heading {
+      color: var(--text-inverse);
+    }
+    .embark-section--electric .embark-section__eyebrow {
+      color: rgba(255,255,255,0.7);
+    }
+    .embark-section__body {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--text-default);
+      max-width: 640px;
+    }
+    .embark-section--electric .embark-section__body {
+      color: rgba(255,255,255,0.85);
+    }
+    @media (max-width: 767px) {
+      .embark-section {
+        padding: var(--section-pad-mobile);
+      }
+      .embark-section__heading {
+        font-size: 32px;
+        line-height: 1.2;
+      }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Card (standard)
+       White or Sand bg, subtle shadow, 10px radius.
+       Used for pillars, features, proof points.
+       ================================================================ */
+    .embark-card {
+      background: var(--paper);
+      border-radius: 10px;
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .embark-card--sand {
+      background: var(--sand);
+      box-shadow: none;
+    }
+    .embark-card--large {
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .embark-card--bordered {
+      border: 1px solid var(--border-subdued);
+    }
+    .embark-card__eyebrow {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.0125em;
+      color: var(--text-muted);
+    }
+    .embark-card__heading {
+      font-family: var(--font-headline);
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .embark-card__body {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: var(--text-default);
+    }
+    .embark-card__proof {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.4;
+      border-top: 1px solid var(--stroke);
+      padding-top: 16px;
+    }
+    .embark-card__image {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .embark-card__image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    /* Card grid layouts */
+    .embark-card-grid {
+      display: grid;
+      gap: 20px;
+    }
+    .embark-card-grid--2 { grid-template-columns: 1fr 1fr; }
+    .embark-card-grid--3 { grid-template-columns: 1fr 1fr 1fr; }
+    .embark-card-grid--4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+    @media (max-width: 767px) {
+      .embark-card-grid--2,
+      .embark-card-grid--3,
+      .embark-card-grid--4 {
+        grid-template-columns: 1fr;
+      }
+      .embark-card { padding: 24px; }
+      .embark-card__heading { font-size: 20px; }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Stat Card
+       Large number in nav-blue, label below, optional context.
+       Used for proof/metrics sections.
+       ================================================================ */
+    .embark-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .embark-stat__number {
+      font-family: var(--font-headline);
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: var(--nav-blue);
+    }
+    .embark-stat__label {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .embark-stat__context {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    @media (max-width: 767px) {
+      .embark-stat__number { font-size: 40px; }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Testimonial
+       Sand background, italic quote, cite below.
+       ================================================================ */
+    .embark-testimonial {
+      background: var(--sand);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .embark-testimonial__quote {
+      font-family: var(--font-body);
+      font-size: 22px;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--text-default);
+      margin-bottom: 16px;
+    }
+    .embark-testimonial__cite {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+      font-style: normal;
+    }
+    .embark-testimonial__role {
+      font-weight: 400;
+    }
+    @media (max-width: 767px) {
+      .embark-testimonial {
+        padding: 24px;
+        border-radius: 16px;
+      }
+      .embark-testimonial__quote { font-size: 18px; }
+    }
+
+
+    /* ================================================================
+       COMPONENT: CTA Banner (Mid-page or Final)
+       Two variants: Sand (warm) and Electric (bold).
+       Centered text + button. Rounded corners.
+       ================================================================ */
+    .embark-cta-banner {
+      border-radius: 30px;
+      padding: 64px 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .embark-cta-banner--sand {
+      background: var(--sand);
+    }
+    .embark-cta-banner--electric {
+      background: var(--electric);
+    }
+    .embark-cta-banner--sunny {
+      background: var(--sunny);
+    }
+    .embark-cta-banner__heading {
+      font-family: var(--font-headline);
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .embark-cta-banner--electric .embark-cta-banner__heading {
+      color: var(--text-inverse);
+    }
+    .embark-cta-banner__sub {
+      font-family: var(--font-body);
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--text-muted);
+      max-width: 480px;
+    }
+    .embark-cta-banner--electric .embark-cta-banner__sub {
+      color: rgba(255,255,255,0.7);
+    }
+    @media (max-width: 767px) {
+      .embark-cta-banner {
+        padding: 40px 16px;
+        border-radius: 20px;
+      }
+      .embark-cta-banner__heading { font-size: 24px; }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Steps / How It Works
+       Numbered circles (nav-blue) + content. 3-col on desktop.
+       ================================================================ */
+    .embark-steps {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 32px;
+    }
+    .embark-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+    }
+    .embark-step__number {
+      width: 48px;
+      height: 48px;
+      border-radius: 999px;
+      background: var(--nav-blue);
+      color: var(--text-inverse);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-headline);
+      font-size: 20px;
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+    .embark-step__heading {
+      font-family: var(--font-headline);
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--ink);
+      letter-spacing: -0.005em;
+    }
+    .embark-step__body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    @media (max-width: 767px) {
+      .embark-steps { grid-template-columns: 1fr; gap: 24px; }
+      .embark-step {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+      }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Problem Agitation (Left border callout)
+       Blue left border, narrative copy.
+       ================================================================ */
+    .embark-callout {
+      border-left: 3px solid var(--nav-blue);
+      padding-left: 24px;
+    }
+    .embark-callout p {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.4;
+      color: var(--text-default);
+      margin-bottom: 16px;
+    }
+    .embark-callout p:last-child { margin-bottom: 0; }
+
+
+    /* ================================================================
+       COMPONENT: FAQ Accordion
+       Stroke dividers, + icon that rotates to x.
+       ================================================================ */
+    .embark-faq {}
+    .embark-faq__item {
+      border-bottom: 1px solid var(--stroke);
+    }
+    .embark-faq__question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+      gap: 16px;
+    }
+    .embark-faq__question:focus-visible {
+      outline: 2px solid var(--nav-blue);
+      outline-offset: -2px;
+    }
+    .embark-faq__question-text {
+      font-family: var(--font-headline);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+    .embark-faq__icon {
+      flex-shrink: 0;
+      font-size: 24px;
+      color: var(--text-muted);
+      transition: transform 0.2s ease;
+      line-height: 1;
+    }
+    .embark-faq__item.open .embark-faq__icon {
+      transform: rotate(45deg);
+    }
+    .embark-faq__answer {
+      display: none;
+      padding: 0 0 20px;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--text-default);
+      line-height: 1.5;
+      max-width: 640px;
+    }
+    .embark-faq__item.open .embark-faq__answer {
+      display: block;
+    }
+
+
+    /* ================================================================
+       COMPONENT: Trust Stats (inline row)
+       Small stat badges in a horizontal row. Used below hero.
+       ================================================================ */
+    .embark-trust-row {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .embark-trust-stat {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+    .embark-trust-stat strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+
+    /* ================================================================
+       COMPONENT: Form (Lightbox Modal)
+       Used as the primary conversion mechanism on landing pages.
+       Opens over a backdrop blur overlay.
+       ================================================================ */
+    .embark-lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .embark-lightbox.active { display: flex; }
+
+    .embark-lightbox__modal {
+      background: var(--paper);
+      border-radius: 20px;
+      max-width: 440px;
+      width: 100%;
+      padding: 40px 32px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    .embark-lightbox__close {
+      position: absolute;
+      top: 16px; right: 16px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 4px;
+      line-height: 1;
+    }
+    .embark-lightbox__close:hover { color: var(--ink); }
+    .embark-lightbox__title {
+      font-family: var(--font-headline);
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--ink);
+      text-align: center;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+    .embark-lightbox__subtitle {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    /* Form inputs */
+    .embark-form-group { margin-bottom: 16px; }
+    .embark-form-label {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .embark-form-input {
+      width: 100%;
+      border: 1px solid var(--border-subdued);
+      border-radius: 8px;
+      padding: 10px 15px;
+      font-family: var(--font-body);
+      font-size: 16px;
+      color: var(--text-default);
+      background: var(--paper);
+      transition: border-color 0.15s ease;
+      min-height: 44px;
+    }
+    .embark-form-input::placeholder { color: var(--border-subdued); }
+    .embark-form-input:hover { border-color: var(--stroke); }
+    .embark-form-input:focus {
+      outline: none;
+      border-color: var(--nav-blue);
+      box-shadow: 0 0 0 1px var(--nav-blue);
+    }
+    .embark-form-microcopy {
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 12px;
+    }
+    @media (max-width: 767px) {
+      .embark-lightbox__modal {
+        padding: 32px 20px;
+        margin: 10px;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-radius: 16px;
+      }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Floating CTA (Bubblegum)
+       Fixed-position CTA that appears on scroll. Mobile only.
+       ================================================================ */
+    .embark-floating-cta {
+      display: none; /* shown via JS on scroll */
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 99;
+    }
+    .embark-floating-cta .embark-btn {
+      background: var(--bubblegum);
+      color: var(--text-inverse);
+      border-radius: 10px 10px 0 0;
+      height: 44px;
+      padding: 10px 20px;
+      font-size: 20px;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.15);
+    }
+    .embark-floating-cta .embark-btn:hover {
+      background: #d963aa; /* darker bubblegum */
+    }
+    @media (max-width: 767px) {
+      .embark-floating-cta.visible { display: block; }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Footer (Minimal landing page variant)
+       Centered logo + legal. No full site nav.
+       ================================================================ */
+    .embark-footer {
+      border-top: 1px solid var(--stroke);
+      padding: 32px 80px 48px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .embark-footer__logo img,
+    .embark-footer__logo svg {
+      height: 20px;
+      width: auto;
+    }
+    .embark-footer__legal {
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .embark-footer__legal a {
+      color: var(--text-muted);
+      text-decoration: underline;
+    }
+    .embark-footer__legal a:hover { color: var(--nav-blue); }
+    .embark-footer__disclaimer {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    @media (max-width: 767px) {
+      .embark-footer { padding: 24px 16px 32px; }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Sunny Section (accent background)
+       Yellow background section, commonly used for featured content.
+       Uses rounded top corners on mobile.
+       ================================================================ */
+    .embark-section--sunny {
+      background: var(--sunny);
+      border-radius: 0;
+    }
+    .embark-section--sunny .embark-section__heading {
+      color: var(--ink);
+    }
+    @media (max-width: 767px) {
+      .embark-section--sunny {
+        border-radius: 20px 20px 0 0;
+      }
+    }
+
+
+    /* ================================================================
+       COMPONENT: Feature Callout (asymmetric radius)
+       Used for highlighting a key feature with a distinctive shape.
+       Top-left is square, others are 40px rounded.
+       ================================================================ */
+    .embark-feature-callout {
+      background: var(--sand);
+      border-radius: 0 40px 40px 40px;
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    @media (max-width: 767px) {
+      .embark-feature-callout {
+        padding: 32px 20px;
+        border-radius: 0 24px 24px 24px;
+      }
+    }
+
+
+    /* ================================================================
+       HELPER: Visually hidden (accessible text)
+       ================================================================ */
+    .embark-sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+
+    /* ================================================================
+       DEMO STYLES (not for production - just for this reference page)
+       ================================================================ */
+    .demo-section {
+      padding: 40px 80px;
+      border-bottom: 4px solid var(--sunny);
+    }
+    .demo-label {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--bubblegum);
+      margin-bottom: 24px;
+    }
+    .demo-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================================================================
+     DEMO: NAVIGATION
+     ================================================================ -->
+<div class="demo-section">
+  <p class="demo-label">Component: Navigation (Blue)</p>
+  <div class="embark-nav-wrap">
+    <nav class="embark-nav">
+      <a class="embark-nav__logo" href="#">
+        <svg width="98" height="21" viewBox="0 0 98 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Embark"><path fill-rule="evenodd" clip-rule="evenodd" d="M56.7844 12.7568C56.7844 18.1007 53.7186 20.8851 50.3436 20.8851C48.0935 20.8851 46.0124 19.6476 45.1968 17.2287L44.1842 20.6037H42.3279V0.916016H45.3093V8.2006C46.1811 5.83799 48.0935 4.7131 50.2874 4.7131C53.6906 4.7131 56.7844 7.35674 56.7844 12.7568ZM53.7749 12.7568C53.7749 9.21299 52.1718 7.21622 49.4717 7.21622C46.6873 7.21622 45.0559 9.46622 45.0559 12.8695C45.0559 16.2727 46.6592 18.4101 49.3592 18.4101C52.1435 18.4101 53.7749 16.2726 53.7749 12.7568ZM15.1877 14.6131C15.6096 14.8944 16.0877 15.2882 16.5096 15.6819L16.0877 10.3661L11.5314 13.1786C12.122 13.263 12.6846 13.4317 13.1908 13.6286C10.9407 17.0319 8.80323 18.6912 7.3126 18.6912C5.7376 18.6912 5.00625 17.3976 4.89375 15.9069C9.1126 13.5162 13.2189 10.0569 13.2189 7.0755C13.2189 5.66925 12.094 4.713 10.4345 4.713C7.14385 4.713 2.7 9.63488 2.30625 14.7256C1.51875 15.035 0.73125 15.3162 0 15.5695L0.871979 17.8475C1.37812 17.6506 1.9126 17.4257 2.44698 17.1725C2.95323 19.3101 4.44385 20.8851 7.17198 20.8851C9.73135 20.8851 12.5721 19.1695 15.1877 14.6131ZM10.519 7.10363C10.519 8.59425 8.63448 10.788 5.23135 13.2631C6.3001 10.0569 9.28146 6.82237 10.294 6.82237C10.4345 6.82237 10.519 6.87862 10.519 7.10363ZM18.4781 4.99415V20.6038H18.4782H21.4596V10.3662C21.4596 8.0881 23.0626 7.24425 24.6096 7.24425C26.2971 7.24425 27.4783 8.2006 27.4783 10.31V20.6038H30.4597V10.3662C30.4597 8.0881 32.0627 7.24425 33.6097 7.24425C35.2972 7.24425 36.4784 8.2006 36.4784 10.31V20.6038H39.4598V9.91613C39.4598 6.513 37.3785 4.713 34.6222 4.713C32.6816 4.713 30.769 5.75352 30.1502 7.91925C29.5033 5.80977 27.8158 4.713 25.7065 4.713C23.794 4.713 21.9939 5.7255 21.3751 7.7505L21.2345 4.99415H18.4781ZM72.3092 20.7446V18.5509C72.3092 18.5509 72.0842 18.6072 71.831 18.6072C70.9309 18.6072 70.7059 18.2134 70.7059 17.454V9.66331C70.7059 6.20383 68.0903 4.7132 65.0246 4.7132C61.5932 4.7132 59.1182 6.48508 58.612 9.80383L61.509 10.3382C61.7902 7.91956 63.0558 7.01945 64.9121 7.01945C66.7122 7.01945 67.8091 7.89133 67.8091 9.77581V10.8164C66.2903 10.9007 64.6028 11.0977 63.1121 11.4913C60.8902 12.0538 58.4996 13.2632 58.4996 16.2727C58.4996 18.9446 60.3839 20.8852 63.3371 20.8852C65.5591 20.8852 67.3309 19.7602 67.8091 17.7914C67.8935 19.9008 68.8779 20.8289 70.9873 20.8289C71.7185 20.8289 72.3092 20.7446 72.3092 20.7446ZM67.8091 12.8131V15.2882C67.8091 17.1725 66.4591 18.7195 64.2372 18.7195C62.4371 18.7195 61.3965 17.7351 61.3965 16.1038C61.3965 14.81 62.0433 14.0506 63.5903 13.5162C64.7716 13.0943 66.4591 12.8976 67.8091 12.8131ZM73.8839 20.6038V4.99415H76.6402L76.7808 7.32863C77.3152 5.6129 78.4966 4.713 80.1278 4.713C82.0966 4.713 83.7279 5.97852 83.5309 9.52238L80.8028 9.94435C80.9716 7.638 80.1279 7.04738 79.0309 7.04738C77.9058 7.04738 76.8653 7.83488 76.8653 10.0006V20.6038H73.884H73.8839ZM96.0183 14.6131C95.1463 12.8131 93.937 11.5193 92.4745 11.1256L92.4746 11.1255L97.9309 4.99414H94.4152L88.1715 12.0817V0.916016H85.1901V20.6038H88.1715V13.0943C88.5933 12.785 89.0996 12.6162 89.6902 12.6162C92.6715 12.6162 94.0215 16.582 94.584 20.6038H97.6777C97.4246 18.8601 96.9746 16.5537 96.0183 14.6131Z" fill="white"/></svg>
+      </a>
+      <ul class="embark-nav__links">
+        <li><a href="#">Happy Works</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Who We Serve</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: BUTTONS
+     ================================================================ -->
+<div class="demo-section">
+  <p class="demo-label">Component: Buttons - Primary</p>
+  <div class="demo-row">
+    <a href="#" class="embark-btn embark-btn--primary embark-btn--L">Large CTA</a>
+    <a href="#" class="embark-btn embark-btn--primary embark-btn--M">Medium CTA</a>
+    <a href="#" class="embark-btn embark-btn--primary embark-btn--S">Small CTA</a>
+    <a href="#" class="embark-btn embark-btn--primary embark-btn--XS">XS CTA</a>
+  </div>
+  <p class="demo-label">Component: Buttons - Secondary</p>
+  <div class="demo-row">
+    <a href="#" class="embark-btn embark-btn--secondary embark-btn--L">Large</a>
+    <a href="#" class="embark-btn embark-btn--secondary embark-btn--M">Medium</a>
+    <a href="#" class="embark-btn embark-btn--secondary embark-btn--S">Small</a>
+  </div>
+  <p class="demo-label">Component: Buttons - Ghost</p>
+  <div class="demo-row">
+    <a href="#" class="embark-btn embark-btn--ghost embark-btn--L">Learn more</a>
+    <a href="#" class="embark-btn embark-btn--ghost embark-btn--M">Learn more</a>
+  </div>
+  <p class="demo-label">Component: Buttons - Inverted (for dark backgrounds)</p>
+  <div class="demo-row" style="background: var(--electric); padding: 20px; border-radius: 10px;">
+    <a href="#" class="embark-btn embark-btn--inverted embark-btn--L">Get started</a>
+    <a href="#" class="embark-btn embark-btn--inverted embark-btn--M">Get started</a>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: HERO (Split layout)
+     ================================================================ -->
+<div class="demo-section" style="padding: 0;">
+  <p class="demo-label" style="padding: 40px 80px 0;">Component: Hero (Split Layout)</p>
+  <section class="embark-hero">
+    <div class="embark-hero__content">
+      <span class="embark-hero__eyebrow">INTERIM FINANCE LEADERSHIP</span>
+      <h1 class="embark-hero__headline">Interim CFO services for moments that can't wait</h1>
+      <p class="embark-hero__sub">Big 4 Alumni who embed with your team, keep your financials on track, and stay until the job is done.</p>
+      <div>
+        <a href="#" class="embark-btn embark-btn--primary embark-btn--L">Get interim support</a>
+      </div>
+      <div class="embark-trust-row">
+        <span class="embark-trust-stat"><strong>NPS 93</strong></span>
+        <span class="embark-trust-stat"><strong>91%</strong> client retention</span>
+        <span class="embark-trust-stat"><strong>9%</strong> consultant attrition</span>
+      </div>
+    </div>
+    <div class="embark-hero__image embark-hero__image--placeholder">
+      [ Hero image: 659x858, cover fit ]
+    </div>
+  </section>
+</div>
+
+
+<!-- ================================================================
+     DEMO: HERO (Centered, no image)
+     ================================================================ -->
+<div class="demo-section" style="padding: 0;">
+  <p class="demo-label" style="padding: 40px 80px 0;">Component: Hero (Centered)</p>
+  <section class="embark-hero--centered">
+    <div class="embark-hero__content">
+      <span class="embark-hero__eyebrow">INTERIM FINANCE LEADERSHIP</span>
+      <h1 class="embark-hero__headline">Your CFO left. Your close cycle didn't.</h1>
+      <p class="embark-hero__sub">Big 4 Alumni deployed in days, not months. NPS 93.</p>
+      <div>
+        <a href="#" class="embark-btn embark-btn--primary embark-btn--L">Get interim support</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ================================================================
+     DEMO: LOGO BAR
+     ================================================================ -->
+<div class="demo-section" style="padding: 0;">
+  <p class="demo-label" style="padding: 40px 80px 0;">Component: Logo Bar (Stacked, light)</p>
+  <div class="embark-logobar--light embark-logobar--stacked">
+    <span class="embark-logobar__label">Trusted by leading companies</span>
+    <div class="embark-logobar__logos">
+      <img src="https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/gamestop.svg" alt="GameStop" class="embark-client-logo">
+      <img src="https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/slb.svg" alt="SLB" class="embark-client-logo">
+      <img src="https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/hellofresh.svg" alt="HelloFresh" class="embark-client-logo">
+      <img src="https://www.embarkwithus.com/hubfs/aimbridge-2.svg" alt="Aimbridge" class="embark-client-logo">
+      <img src="https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/tgi-fridays.svg" alt="TGI Fridays" class="embark-client-logo">
+      <img src="https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/neiman-marcus.svg" alt="Neiman Marcus" class="embark-client-logo">
+      <img src="https://www.embarkwithus.com/hubfs/FunnelEnvy/logos/daseke.svg" alt="Daseke" class="embark-client-logo">
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: CARDS
+     ================================================================ -->
+<div class="demo-section">
+  <p class="demo-label">Component: Card Grid (3-up)</p>
+  <div class="embark-card-grid embark-card-grid--3">
+    <div class="embark-card embark-card--bordered">
+      <h3 class="embark-card__heading">Your finance function can't pause</h3>
+      <p class="embark-card__body">We deploy interim finance leaders who pick up where your team left off.</p>
+      <p class="embark-card__proof">9% consultant attrition. Half the Big 4 average.</p>
+    </div>
+    <div class="embark-card embark-card--bordered">
+      <h3 class="embark-card__heading">We send operators, not resumes</h3>
+      <p class="embark-card__body">Embark interims have run finance teams before. They execute from day one.</p>
+      <p class="embark-card__proof">"The competence has been hard to replicate." -- Melanie Merritt</p>
+    </div>
+    <div class="embark-card embark-card--bordered">
+      <h3 class="embark-card__heading">Deployed in days, not locked into years</h3>
+      <p class="embark-card__body">Flexible engagements that scale based on what you need.</p>
+      <p class="embark-card__proof">"Embark's ability to flex was instrumental to our IPO." -- Sam Simmons</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: STAT CARDS
+     ================================================================ -->
+<div class="demo-section">
+  <p class="demo-label">Component: Stat Cards in Grid</p>
+  <div class="embark-card-grid embark-card-grid--3">
+    <div class="embark-card embark-card--bordered">
+      <div class="embark-stat">
+        <span class="embark-stat__number">96%</span>
+        <span class="embark-stat__label">Reduction in reconciliation time</span>
+        <span class="embark-stat__context">Interstate Batteries went from 12-hour reconciliations to 30 minutes.</span>
+      </div>
+    </div>
+    <div class="embark-card embark-card--bordered">
+      <div class="embark-stat">
+        <span class="embark-stat__number">4 wks</span>
+        <span class="embark-stat__label">From merger to SEC filing</span>
+        <span class="embark-stat__context">Atlas Technical: two years of audited financials across 100+ locations.</span>
+      </div>
+    </div>
+    <div class="embark-card embark-card--bordered">
+      <div class="embark-stat">
+        <span class="embark-stat__number">93</span>
+        <span class="embark-stat__label">Net Promoter Score</span>
+        <span class="embark-stat__context">Industry average is 27.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: TESTIMONIAL
+     ================================================================ -->
+<div class="demo-section">
+  <p class="demo-label">Component: Testimonial</p>
+  <div class="embark-testimonial">
+    <p class="embark-testimonial__quote">"Every single Embarker I've come across has been competent, enthusiastic, passionate, and willing to help in whatever way is necessary, and, frankly, just good people."</p>
+    <p class="embark-testimonial__cite">Jim Forson, <span class="embark-testimonial__role">CFO</span></p>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: CTA BANNERS
+     ================================================================ -->
+<div class="demo-section">
+  <p class="demo-label">Component: CTA Banner (Sand)</p>
+  <div class="embark-cta-banner embark-cta-banner--sand">
+    <h2 class="embark-cta-banner__heading">Your finance gap is costing you right now.</h2>
+    <p class="embark-cta-banner__sub">Tell us what you're facing. We'll tell you how fast we can help.</p>
+    <a href="#" class="embark-btn embark-btn--primary embark-btn--L">Get interim support</a>
+  </div>
+
+  <br>
+
+  <p class="demo-label">Component: CTA Banner (Electric)</p>
+  <div class="embark-cta-banner embark-cta-banner--electric">
+    <h2 class="embark-cta-banner__heading">The gap is growing. Let's close it.</h2>
+    <p class="embark-cta-banner__sub">One conversation. We'll tell you how fast we can help.</p>
+    <a href="#" class="embark-btn embark-btn--inverted embark-btn--L">Get interim support</a>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: STEPS
+     ================================================================ -->
+<div class="demo-section">
+  <p class="demo-label">Component: Steps / How It Works</p>
+  <div class="embark-steps">
+    <div class="embark-step">
+      <div class="embark-step__number">1</div>
+      <h3 class="embark-step__heading">Tell us what you need.</h3>
+      <p class="embark-step__body">A 15-minute call to understand your situation.</p>
+    </div>
+    <div class="embark-step">
+      <div class="embark-step__number">2</div>
+      <h3 class="embark-step__heading">We match you with an operator.</h3>
+      <p class="embark-step__body">Big 4 Alumni matched to your industry and situation.</p>
+    </div>
+    <div class="embark-step">
+      <div class="embark-step__number">3</div>
+      <h3 class="embark-step__heading">They start working.</h3>
+      <p class="embark-step__body">No ramp-up. No onboarding lag. Execution from day one.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: FEATURE CALLOUT (Asymmetric radius)
+     ================================================================ -->
+<div class="demo-section">
+  <p class="demo-label">Component: Feature Callout (asymmetric radius)</p>
+  <div class="embark-feature-callout">
+    <span class="embark-section__eyebrow">WHY EMBARK</span>
+    <h3 class="embark-card__heading">We've operated in situations like yours before.</h3>
+    <p class="embark-card__body">CFO departure. Audit season with no senior finance leadership. Post-acquisition integration. These are the moments we were built for.</p>
+    <a href="#" class="embark-btn embark-btn--primary embark-btn--M">See case studies</a>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: FAQ
+     ================================================================ -->
+<div class="demo-section">
+  <p class="demo-label">Component: FAQ Accordion</p>
+  <div class="embark-faq">
+    <div class="embark-faq__item open">
+      <button class="embark-faq__question" type="button" aria-expanded="true" onclick="toggleFaq(this)">
+        <span class="embark-faq__question-text">"Isn't interim help expensive?"</span>
+        <span class="embark-faq__icon" aria-hidden="true">+</span>
+      </button>
+      <div class="embark-faq__answer" role="region">
+        The cost of a missed close or a qualified audit finding is higher. Interim support is time-bound and outcome-driven.
+      </div>
+    </div>
+    <div class="embark-faq__item">
+      <button class="embark-faq__question" type="button" aria-expanded="false" onclick="toggleFaq(this)">
+        <span class="embark-faq__question-text">"How is this different from a staffing agency?"</span>
+        <span class="embark-faq__icon" aria-hidden="true">+</span>
+      </button>
+      <div class="embark-faq__answer" role="region">
+        A staffing firm sends you a resume and hopes for the best. We send an operator who owns outcomes from day one.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     DEMO: FOOTER
+     ================================================================ -->
+<div class="demo-section" style="padding: 0;">
+  <p class="demo-label" style="padding: 40px 80px 0;">Component: Footer</p>
+  <footer class="embark-footer">
+    <div class="embark-footer__logo">
+      <svg width="98" height="21" viewBox="0 0 98 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Embark"><path fill-rule="evenodd" clip-rule="evenodd" d="M56.7844 12.7568C56.7844 18.1007 53.7186 20.8851 50.3436 20.8851C48.0935 20.8851 46.0124 19.6476 45.1968 17.2287L44.1842 20.6037H42.3279V0.916016H45.3093V8.2006C46.1811 5.83799 48.0935 4.7131 50.2874 4.7131C53.6906 4.7131 56.7844 7.35674 56.7844 12.7568ZM53.7749 12.7568C53.7749 9.21299 52.1718 7.21622 49.4717 7.21622C46.6873 7.21622 45.0559 9.46622 45.0559 12.8695C45.0559 16.2727 46.6592 18.4101 49.3592 18.4101C52.1435 18.4101 53.7749 16.2726 53.7749 12.7568ZM15.1877 14.6131C15.6096 14.8944 16.0877 15.2882 16.5096 15.6819L16.0877 10.3661L11.5314 13.1786C12.122 13.263 12.6846 13.4317 13.1908 13.6286C10.9407 17.0319 8.80323 18.6912 7.3126 18.6912C5.7376 18.6912 5.00625 17.3976 4.89375 15.9069C9.1126 13.5162 13.2189 10.0569 13.2189 7.0755C13.2189 5.66925 12.094 4.713 10.4345 4.713C7.14385 4.713 2.7 9.63488 2.30625 14.7256C1.51875 15.035 0.73125 15.3162 0 15.5695L0.871979 17.8475C1.37812 17.6506 1.9126 17.4257 2.44698 17.1725C2.95323 19.3101 4.44385 20.8851 7.17198 20.8851C9.73135 20.8851 12.5721 19.1695 15.1877 14.6131ZM10.519 7.10363C10.519 8.59425 8.63448 10.788 5.23135 13.2631C6.3001 10.0569 9.28146 6.82237 10.294 6.82237C10.4345 6.82237 10.519 6.87862 10.519 7.10363ZM18.4781 4.99415V20.6038H18.4782H21.4596V10.3662C21.4596 8.0881 23.0626 7.24425 24.6096 7.24425C26.2971 7.24425 27.4783 8.2006 27.4783 10.31V20.6038H30.4597V10.3662C30.4597 8.0881 32.0627 7.24425 33.6097 7.24425C35.2972 7.24425 36.4784 8.2006 36.4784 10.31V20.6038H39.4598V9.91613C39.4598 6.513 37.3785 4.713 34.6222 4.713C32.6816 4.713 30.769 5.75352 30.1502 7.91925C29.5033 5.80977 27.8158 4.713 25.7065 4.713C23.794 4.713 21.9939 5.7255 21.3751 7.7505L21.2345 4.99415H18.4781ZM72.3092 20.7446V18.5509C72.3092 18.5509 72.0842 18.6072 71.831 18.6072C70.9309 18.6072 70.7059 18.2134 70.7059 17.454V9.66331C70.7059 6.20383 68.0903 4.7132 65.0246 4.7132C61.5932 4.7132 59.1182 6.48508 58.612 9.80383L61.509 10.3382C61.7902 7.91956 63.0558 7.01945 64.9121 7.01945C66.7122 7.01945 67.8091 7.89133 67.8091 9.77581V10.8164C66.2903 10.9007 64.6028 11.0977 63.1121 11.4913C60.8902 12.0538 58.4996 13.2632 58.4996 16.2727C58.4996 18.9446 60.3839 20.8852 63.3371 20.8852C65.5591 20.8852 67.3309 19.7602 67.8091 17.7914C67.8935 19.9008 68.8779 20.8289 70.9873 20.8289C71.7185 20.8289 72.3092 20.7446 72.3092 20.7446ZM67.8091 12.8131V15.2882C67.8091 17.1725 66.4591 18.7195 64.2372 18.7195C62.4371 18.7195 61.3965 17.7351 61.3965 16.1038C61.3965 14.81 62.0433 14.0506 63.5903 13.5162C64.7716 13.0943 66.4591 12.8976 67.8091 12.8131ZM73.8839 20.6038V4.99415H76.6402L76.7808 7.32863C77.3152 5.6129 78.4966 4.713 80.1278 4.713C82.0966 4.713 83.7279 5.97852 83.5309 9.52238L80.8028 9.94435C80.9716 7.638 80.1279 7.04738 79.0309 7.04738C77.9058 7.04738 76.8653 7.83488 76.8653 10.0006V20.6038H73.884H73.8839ZM96.0183 14.6131C95.1463 12.8131 93.937 11.5193 92.4745 11.1256L92.4746 11.1255L97.9309 4.99414H94.4152L88.1715 12.0817V0.916016H85.1901V20.6038H88.1715V13.0943C88.5933 12.785 89.0996 12.6162 89.6902 12.6162C92.6715 12.6162 94.0215 16.582 94.584 20.6038H97.6777C97.4246 18.8601 96.9746 16.5537 96.0183 14.6131Z" fill="black"/></svg>
+    </div>
+    <p class="embark-footer__legal">
+      &copy; 2026 Embark. All rights reserved.<br>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </p>
+    <p class="embark-footer__disclaimer">Embark is not a CPA firm.</p>
+  </footer>
+</div>
+
+
+<script>
+  // FAQ accordion (include in every landing page that uses the FAQ component)
+  function toggleFaq(button) {
+    var item = button.parentElement;
+    var isOpen = item.classList.contains('open');
+    var items = document.querySelectorAll('.embark-faq__item');
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.remove('open');
+      items[i].querySelector('.embark-faq__question').setAttribute('aria-expanded', 'false');
+    }
+    if (!isOpen) {
+      item.classList.add('open');
+      button.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // Lightbox (include in every landing page that uses a form modal)
+  function openLightbox() {
+    var overlay = document.querySelector('.embark-lightbox');
+    if (!overlay) return;
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function() {
+      var input = overlay.querySelector('input');
+      if (input) input.focus();
+    }, 100);
+  }
+  function closeLightbox() {
+    var overlay = document.querySelector('.embark-lightbox');
+    if (!overlay) return;
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('embark-lightbox')) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  // Floating CTA visibility on scroll (include for mobile sticky CTA)
+  window.addEventListener('scroll', function() {
+    var cta = document.querySelector('.embark-floating-cta');
+    if (!cta) return;
+    if (window.scrollY > 400) {
+      cta.classList.add('visible');
+    } else {
+      cta.classList.remove('visible');
+    }
+  });
+</script>
+
+</body>
+</html>
