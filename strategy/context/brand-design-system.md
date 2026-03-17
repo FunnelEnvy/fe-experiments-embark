@@ -139,7 +139,7 @@ letter-spacing:
   eyebrows: 1.25%
 ```
 
-Type rules: sentence case only (eyebrows excepted). Short sentences. Use contractions. Arrow glyphs only for e,m,b,a,r,k letters, max 2-5 per placement, never in the word "Embark" in copy. Skip arrow glyphs in prototypes unless font files available.
+Type rules: **All titles and headlines must use sentence case** (capitalize first word only, plus proper nouns). Never Title Case. Eyebrows are the sole exception (UPPERCASE). Short sentences. Use contractions. Arrow glyphs only for e,m,b,a,r,k letters, max 2-5 per placement, never in the word "Embark" in copy. Skip arrow glyphs in prototypes unless font files available.
 
 ## Buttons
 
@@ -396,7 +396,7 @@ Ecommerce-Store: "store pages"
 
 ## Copy & Tone
 
-Aspirational, warm, witty. Never jargon. Headlines subvert business tropes ("Not business as usual." "Year-over-year happiness."). Short sentences. Contractions. Positive framing only. CTAs direct ("Talk to an advisor", "Download the guide"). Smiles not LOLs. Eyebrows UPPERCASE, headlines sentence case.
+Aspirational, warm, witty. Never jargon. Headlines subvert business tropes ("Not business as usual." "Year-over-year happiness."). Short sentences. Contractions. Positive framing only. CTAs direct ("Talk to an advisor", "Download the guide"). Smiles not LOLs. Eyebrows UPPERCASE. All titles/headlines sentence case (never Title Case).
 
 ## Anti-Patterns
 
@@ -408,6 +408,7 @@ Aspirational, warm, witty. Never jargon. Headlines subvert business tropes ("Not
 - Never stack arrow glyphs vertically
 - Never primary logotype next to logomark
 - Never all-caps headlines (eyebrows only)
+- Never Title Case in headlines or titles (sentence case only: capitalize first word + proper nouns)
 - Never stock photography
 - Never business jargon
 - Never outlined logomark at small sizes
