@@ -12,393 +12,474 @@ Experiments are grouped into three tiers:
 - **Strategic Bets:** High impact, moderate confidence. Higher effort, higher payoff.
 - **Explorations:** Lower confidence, high learning potential. Run when you have bandwidth.
 
----
-
 ## Roadmap Summary
 
 | # | Experiment | Page | Tier | I | C | E | ICE |
 |---|-----------|------|------|---|---|---|-----|
-| 1 | Objection Preemption: Independence as Advantage | /contact, /what-we-do/* | Quick Win | 3 | 4 | 4 | 11 |
-| 2 | Team Page: Evaluation-Stage Conversion Path | /team/* | Quick Win | 3 | 4 | 5 | 12 |
-| 3 | Offices Page: Local Advisor Contact Path | /offices | Quick Win | 2 | 3 | 5 | 10 |
-| 4 | Homepage Hero: Differentiation-Led Messaging with Proof | / | Strategic Bet | 5 | 4 | 3 | 12 |
-| 5 | Contact Page: Paid Traffic Message Alignment | /contact | Strategic Bet | 4 | 4 | 3 | 11 |
-| 6 | Service Page Differentiation with Contextual Conversion Paths | /what-we-do/* | Strategic Bet | 4 | 3 | 3 | 10 |
-| 7 | Industry Page: Vertical-Specific Proof and Conversion Paths | /who-we-serve/* | Strategic Bet | 3 | 3 | 3 | 9 |
-| 8 | Returning Visitor Differentiated Experience | Site-wide | Exploration | 3 | 3 | 2 | 8 |
-| 9 | Blog Content: Organic Entry Point Capture | Root-level blog posts | Exploration | 2 | 3 | 3 | 8 |
-| 10 | Segment-Based Hero Personalization | / | Exploration | 4 | 2 | 1 | 7 |
-| 11 | Persona-Based Navigation Paths | Site-wide navigation | Exploration | 4 | 2 | 1 | 7 |
-| 12 | Finance Function Readiness Assessment | New page | Exploration | 3 | 2 | 2 | 7 |
+| 1 | Homepage Clarity Overhaul: Differentiation-Led Messaging + Proof Strip | Homepage (/) | Quick Win | 5 | 4 | 4 | 13 |
+| 2 | Contact Form Context Reinforcement | /contact | Quick Win | 4 | 4 | 5 | 13 |
+| 3 | Service Page Conversion Injection | /what-we-do/* | Quick Win | 4 | 4 | 4 | 12 |
+| 4 | Specificity Injection on Homepage | Homepage (/) | Strategic Bet | 4 | 4 | 5 | 13 |
+| 5 | Cross-Network Ad-Message Alignment on Contact Page | /contact | Strategic Bet | 4 | 4 | 3 | 11 |
+| 6 | Service Page Differentiation Injection | /what-we-do/* | Strategic Bet | 4 | 3 | 4 | 11 |
+| 7 | About Page Proof Hierarchy Restructure | /about | Strategic Bet | 4 | 3 | 4 | 11 |
+| 8 | Industry Page Conversion Path + Proof | /who-we-serve/* | Exploration | 3 | 3 | 4 | 10 |
+| 9 | Competitive Comparison Page | New page | Exploration | 4 | 3 | 2 | 9 |
+| 10 | Resource Content Bridge: Blog-to-Template CTAs | /13-week-cash-flow-*-best-practices and similar | Exploration | 2 | 3 | 5 | 10 |
 
 ---
 
 ## Quick Wins
 
-### 1. Objection Preemption: Independence as Advantage
+### 1. Homepage Clarity Overhaul: Differentiation-Led Messaging + Proof Strip
 
-**Page:** /contact and /what-we-do/financial-advisory-consulting
-**What to test:** Proactively reframe Embark's non-CPA status as a buyer advantage on high-intent pages, rather than leaving it as a footer disclaimer.
+**Page:** Homepage (/)
+**What to test:** Replace the generic headline, subhead, and hero section with differentiation-led messaging anchored in Embark's unique culture proof, combined with a quantified proof strip immediately below the fold.
 
-**Current state:** "Embark is not a CPA firm" appears only as a disclaimer in the website footer. The contact page and service pages make no proactive mention of why independence from audit and tax work benefits the buyer. The objection cheat sheet has a strong rebuttal ("No audit conflicts. No independence constraints. We advise you without restrictions."), but this messaging is not surfaced anywhere on the website. Buyers who notice the disclaimer or recognize that Embark is not a CPA firm receive no reframing context. The competitive landscape identifies a missing rebuttal for the "We need a one-stop-shop for audit + advisory + tax" objection, which is Embark's most structural positioning challenge against CPA/advisory combo firms (Cherry Bekaert, Baker Tilly, RSM, Forvis Mazars).
-**Baseline:** /contact: 1,480 sessions/mo, 63.1% bounce, 1.19% CVR. /what-we-do/financial-advisory-consulting: 212 sessions/mo, 37.0% bounce, 0% CVR.
-**Test Feasibility:** ~7 weeks at 15% MDE on /contact using engagement rate (2 variants, ~1,214 samples/variant). Extended. Consider form_start as micro-conversion for faster signal.
-**Proposed change:** Add an "Independence is our advantage" content block on the /contact page (above or adjacent to the form) and on /what-we-do/financial-advisory-consulting. Content reframes the non-CPA status positively: why advisory independence means unrestricted counsel without audit conflicts.
+**Current state:** The homepage leads with a rotating carousel. Slide 1 headline: "High-impact consulting for growing companies." Subhead: "At Embark, we help ambitious businesses scale into their next chapter with strategic guidance and hands-on support." Two CTAs: "What we do" / "Talk to an advisor." Slides 2-3 promote downloadable templates. No quantified proof appears above the fold. The homepage has 20,019 sessions over 90 days with a 59.5% bounce rate and 0% conversion rate.
 
-> **Before:** Footer disclaimer: "Embark is not a CPA firm." No proactive reframing on any page.
-> **After:** Content block on /contact: "Why independence matters. Your auditor should audit. We should advise. Because we don't perform audits or tax work, we advise you without the independence constraints that limit CPA firms who audit and advise the same client. No conflicts. No restrictions. Just unrestricted advisory from Big 4 Alumni who chose consulting."
+**Baseline:** 6,673 sessions/mo, 59.5% bounce, 0% CVR (no conversion mechanism on page)
+**Test Feasibility:** Cannot estimate (no conversion rate baseline on this page). Use CTA click-through rate or navigation-to-contact as proxy metric. Minimum 7-day run required.
 
-**Why this should work:** Unanswered objections don't disappear. They become reasons to choose a competitor. Buyers evaluating Embark alongside CPA/advisory combo firms will notice the non-CPA status. Without proactive reframing, the buyer defaults to "they can't do audits" as a limitation rather than "they can advise without restrictions" as a benefit. Preemptive reframing addresses the concern at the moment of highest intent (contact page), converting what looks like a weakness into a differentiator.
+**Proposed change:** Replace the carousel with a static hero. Lead with a differentiation-anchored headline, outcome-oriented subhead, and a proof strip showing NPS 93, 9% attrition, 91% client retention, and 21x revenue growth. Single primary CTA.
 
-**Target metric:** Form start rate on /contact, secondary: contact_us_form_submit rate
-**Audience:** All /contact and service page visitors, particularly those arriving from competitive search terms
+> **Before:** "High-impact consulting for growing companies"
+> **After:** "Big 4 Alumni advisors who stay, execute, and care"
 
-**Scores:** Impact 3 | Confidence 4 | Ease 4
-Impact 3: Addresses a specific subset of visitors who have this concern, not all visitors. Meaningful for those it affects, but not universal. Confidence 4: The objection is well-documented across competitive analysis and client intake. Strong rebuttal copy exists. Behavioral principle (loss aversion in reverse: show what buyer loses choosing a conflicted advisor) is well-established. Ease 4: Adding a content block to existing pages. Copy is already drafted in the objection cheat sheet. No structural changes required.
+> **Before subhead:** "At Embark, we help ambitious businesses scale into their next chapter with strategic guidance and hands-on support."
+> **After subhead:** "Financial advisory and consulting backed by an NPS of 93, 9% consultant attrition, and 91% client retention. No long contracts. No bloated fees. No revolving door of junior associates."
 
-**What a win proves:** Proactive objection handling on high-intent pages influences conversion. Validates expanding this approach to other objections ("How do we know we'll get senior people?" and "Aren't you just a staffing agency?").
-**What a loss teaches:** Visitors may not carry this objection to the contact page, or the reframe may not be strong enough to overcome it. Would suggest the objection is better handled in sales conversation than web copy, or that the reframe needs customer-attributed proof (a testimonial from someone who initially had the same concern).
+> **Before proof:** None above the fold
+> **After proof strip:** NPS 93 | 9% Attrition | 91% Client Retention | $7M to $149M Revenue | 26 US Offices
 
----
+**Why this should work:** B2B buyers decide in 3-5 seconds whether a page is relevant. "High-impact consulting for growing companies" forces cognitive work -- it could describe any advisory firm. Embark's actual differentiators (quantified culture proof, hospitality framing) require reading the About page and Happy Works page to discover. Moving the NPS 93 and 9% attrition data to the first scroll eliminates this discovery cost. The carousel compounds the problem: slides 2-3 promote templates, diluting the positioning message at the highest-attention moment. A static hero with proof creates a single, differentiated first impression that no competitor can replicate.
 
-### 2. Team Page: Evaluation-Stage Conversion Path
+**Target metric:** Primary: CTA click-through rate ("Talk to an advisor" clicks / homepage sessions). Secondary: bounce rate reduction. Tertiary: downstream /contact page visits originating from homepage.
+**Audience:** All visitors, with particular importance for new visitors (90% of traffic)
 
-**Page:** /team and /team/*
-**What to test:** Add a contextual conversion mechanism to the team pages, capturing buyers who are actively evaluating Embark's people.
+**Scores:** Impact 5 | Confidence 4 | Ease 4
+- Impact 5: Homepage is the highest-traffic page (20K sessions/90 days), addresses the scorecard's top opportunity (clarity), and the carousel replacement removes a known conversion-suppressing pattern. Worsening bounce trend (+13.5pp vs prior period) adds urgency.
+- Confidence 4: Exact current copy available. Audience-messaging analysis provides specific channel adaptation for the homepage. Full performance baseline exists. Mechanism is well-validated.
+- Ease 4: Copy changes plus carousel removal. Requires CMS template edit but no new infrastructure. Proof strip content already exists.
 
-**Current state:** The /team page group receives 4,217 sessions per 90 days (1,406 sessions/mo) with the strongest engagement metrics on the entire site: 25.4% bounce rate, 74.6% engagement rate, and 107s average engagement time. Individual team member pages (e.g., /team/paul-allen at 412 sessions, 40.5% bounce) show visitors are drilling into specific people. /team is also a significant entry page: 1,577 landing sessions per 90 days with 38.0% bounce and 62.0% engagement rate. Despite this, the team page group has a 0% conversion rate. No CTA, no form, no path to contact exists on any team page. Visitors who are deep in evaluation mode -- actively researching the specific people they'd work with -- have no way to take the next step without navigating to /contact independently.
-**Baseline:** 1,406 sessions/mo (group), 25.4% bounce, 0% CVR. 107s avg engagement time.
-**Test Feasibility:** ~3 weeks at 15% MDE (2 variants, ~1,045 samples/variant) using engagement rate. CTA click-through rate can be measured as a new baseline. Feasible.
-**Proposed change:** Add a contextual CTA to the team page and individual team member pages. Options: (1) "Work with our team" button linking to /contact with team context pre-populated, (2) inline "Talk to an advisor" CTA positioned after the team grid or at the bottom of individual bios, (3) a brief reinforcement line adjacent to the CTA: "Big 4 Alumni advisors with an NPS of 93. The people you see here are the people who show up."
+**What a win proves:** Embark's unique culture metrics (NPS, attrition, retention) are the strongest lead message for the homepage. Validates that differentiation-led positioning outperforms generic category language for financial advisory buyers. Informs all downstream page messaging -- if culture proof wins on the homepage, propagate to service pages, LinkedIn ads, and sales collateral.
 
-> **Before:** Team grid with headshots, names, and titles. No conversion mechanism. Visitors must independently navigate to /contact.
-> **After:** Same team grid plus: "These are the advisors who show up. Big 4 Alumni with 9% attrition -- half the industry average. [Talk to an advisor]" positioned below the team grid. On individual bio pages: "Want to work with [Name]'s team? [Get in touch]" below the bio.
-
-**Why this should work:** Visitors browsing the team page are in evaluation mode. They're answering the question "who are these people and can I trust them?" The 107s average engagement time and 74.6% engagement rate confirm genuine interest, not casual browsing. These are among the most engaged visitors on the entire site. Adding a conversion mechanism at the moment they've finished evaluating (bottom of team grid, bottom of individual bio) captures intent at peak confidence. The proof reinforcement (NPS 93, 9% attrition) provides the final push: "these people stay, and clients love working with them."
-
-**Target metric:** CTA click-through rate (new), secondary: /contact page visits from /team/*, form_start rate on /contact for team-referral sessions
-**Audience:** All /team and /team/* visitors
-
-**Scores:** Impact 3 | Confidence 4 | Ease 5
-Impact 3: Adds a conversion path to a high-engagement page group (1,406 sessions/mo), but these visitors are mid-funnel (evaluating people) not bottom-funnel (ready to buy). Incremental lead capture, not transformational. Confidence 4: Behavioral signal is unambiguous: 107s engagement and 74.6% engagement rate mean visitors are genuinely interested. The only question is whether adding a CTA captures that interest or if these visitors already find /contact on their own. GA4 shows pages/session of 1.15 on /team, suggesting most visitors don't navigate further. Ease 5: Adding a CTA block with existing copy to a page template. No structural changes. Minimal development effort.
-
-**What a win proves:** High-engagement evaluation pages generate leads when given a conversion mechanism. Validates adding CTAs to other high-engagement, zero-conversion pages (/about at 1,020 sessions, /partners at 517 sessions, /offices at 1,850 sessions).
-**What a loss teaches:** Team page visitors may be a different audience than buyers (recruiters, job seekers, competitors). The high engagement may reflect research behavior rather than purchase intent. Would suggest analyzing team page traffic sources to identify what proportion is buyer vs. non-buyer.
+**What a loss teaches:** Either (a) the target audience values category credibility ("consulting for growing companies") over culture proof, suggesting the brand isn't yet established enough to lead with unconventional positioning, or (b) the specific copy execution failed while the strategy was sound. Check micro-conversion: if proof strip engagement increased but bounces didn't decrease, the headline may need iteration rather than strategy reversal.
 
 ---
 
-### 3. Offices Page: Local Advisor Contact Path
+### 2. Contact Form Context Reinforcement
 
-**Page:** /offices
-**What to test:** Add a location-specific conversion mechanism to the offices page, converting local-presence validation into contact intent.
+**Page:** /contact
+**What to test:** Add value reinforcement, expectation-setting, and relevant social proof adjacent to the contact form to reduce last-moment abandonment.
 
-**Current state:** The /offices page receives 1,850 sessions per 90 days (617 sessions/mo) with 29.4% bounce, 70.6% engagement rate, and 106s average engagement time. It also serves as an entry page for 832 landing sessions with 48.7% bounce and 51.3% engagement rate. Embark has 26 US offices, and this page is a consideration-stage destination for buyers evaluating whether Embark has local coverage for their needs. Despite strong engagement metrics, the page has 0% conversion rate. No CTA or contact mechanism exists. Visitors who confirm Embark has a local presence must independently navigate to /contact, losing the location context.
-**Baseline:** 617 sessions/mo, 29.4% bounce, 0% CVR. 106s avg engagement time.
-**Test Feasibility:** ~5 weeks at 15% MDE (2 variants, ~1,045 samples/variant) using engagement rate. Pre/post is a viable alternative given the lower traffic volume. Borderline feasible for A/B; pre/post recommended.
-**Proposed change:** Add a "Contact your local advisor" or "Find your nearest advisor" CTA to the offices page. Option A: a single prominent CTA linking to /contact. Option B: per-office contact links or a form that captures the visitor's location of interest alongside their contact information. Include proof reinforcement: "26 offices. Local advisors. National reach."
+**Current state:** The /contact page has 4,439 sessions with a 63.1% bounce rate and 1.17% CVR (contact_us_form_submit). The form fires 52 contact submissions over 90 days. The page has no visible value reinforcement around the form itself -- no reminder of what the visitor gets, no trust signals near the submit button, and no expectation-setting for what happens after submission. The "Talk to an advisor" CTA appears only 15 times in click tracking, suggesting the primary CTA language may not be resonating.
 
-> **Before:** Office listings with locations. No conversion mechanism. Visitors confirming local presence must navigate to /contact independently.
-> **After:** Office listings plus: "Ready to connect with a local advisor? [Contact your nearest office]" with optional location selection that pre-populates the contact form. Reinforcement: "26 US offices. The advisor who shows up is the advisor who stays."
+**Baseline:** 1,480 sessions/mo, 63.1% bounce, 1.17% CVR (contact_us_form_submit)
+**Test Feasibility:** ~26 weeks at 15% MDE (2 variants, ~7,600 samples/variant). Challenging. Consider micro-conversion metric (form_start rate) for faster signal. 100 conversions/variant requires approximately 12 months at current volume -- route primary metric to form_start for feasibility purposes.
 
-**Why this should work:** Visitors checking office locations are answering a specific buying question: "Can this firm serve us locally?" The 106s engagement time suggests they're carefully reviewing locations, not just glancing. Once a visitor confirms local availability, the next natural step is "talk to someone there." Without a CTA, the page answers the location question but drops the visitor before capturing intent. The location context is also valuable for sales routing -- knowing which office the visitor is interested in makes the follow-up more relevant.
+**Proposed change:** Add three reinforcement elements adjacent to the form: (1) A "What to expect" section: "A senior advisor will reach out within one business day to discuss your situation. No sales pitch. No obligation." (2) A relevant client testimonial: "Embark sends the best people, so much so that it makes us think that these people grow on trees." -- Brandon Walls, CPA, VP Controller, Ashford Hospitality Trust. (3) A proof metric strip: NPS 93 | 9% Attrition | 91% Client Retention.
 
-**Target metric:** CTA click-through rate (new), secondary: /contact page visits from /offices, form_start rate
-**Audience:** All /offices visitors
+**Why this should work:** At the moment of form submission, the visitor re-evaluates their decision. The /contact page currently asks for information without reinforcing what the visitor receives in return. For enterprise B2B buyers considering a financial advisory engagement, the implicit question is "Is disclosing my contact information worth the potential sales pressure?" Expectation-setting ("no sales pitch, no obligation") and a named client testimonial from a VP Controller address both the uncertainty about post-submission experience and the credibility of the firm. The proof metrics reinforce differentiation at the point of highest commitment.
 
-**Scores:** Impact 2 | Confidence 3 | Ease 5
-Impact 2: 617 sessions/mo is moderate traffic, and the conversion potential depends on what proportion of visitors are buyers vs. job seekers or other audiences. The page doesn't have enough traffic to drive a large absolute number of conversions. Confidence 3: Engagement metrics confirm visitor interest, but the audience mix is uncertain. Some portion of office page traffic may be job seekers checking locations rather than buyers evaluating coverage. Ease 5: Adding a CTA to a single page with existing infrastructure. Trivial implementation.
+**Target metric:** Primary: contact_us_form_submit rate. Secondary: form_start rate (leading indicator). Track both to distinguish initiation friction from completion friction.
+**Audience:** All /contact visitors, particularly cross-network (paid) traffic which converts at only 0.42% vs direct at 2.24%.
 
-**What a win proves:** Consideration-stage pages with strong engagement generate leads when given a contextual conversion path. Validates the broader pattern of adding CTAs to high-engagement, zero-conversion pages across the site.
-**What a loss teaches:** Office page visitors may not be buyers, or the location-to-contact journey may already happen organically (visitors navigate to /contact after /offices without needing a CTA). Would suggest audience analysis of /offices traffic sources before further investment.
+**Scores:** Impact 4 | Confidence 4 | Ease 5
+- Impact 4: The /contact page is the only meaningful bottom-of-funnel conversion point. Even modest CVR improvement on 1,480 sessions/mo directly increases qualified leads. Worsening CVR trend (-2.01pp site-wide) adds urgency.
+- Confidence 4: Form context reinforcement is a well-validated pattern. Named client testimonials and specific proof points are available. The 5.3x gap between direct and cross-network CVR suggests messaging/trust gaps that reinforcement directly addresses.
+- Ease 5: Copy additions adjacent to an existing form. No structural changes. Can be implemented in hours.
+
+**What a win proves:** Post-click trust reinforcement matters for Embark's buyer profile. The proof metrics and client testimonials are effective conversion tools, not just brand assets. Informs proof placement strategy across all high-intent pages.
+
+**What a loss teaches:** The /contact page bounce issue may be primarily traffic quality (particularly the 85.2% bounce from direct traffic) rather than page experience. If form_start improves but form_submit doesn't, the bottleneck is in the form fields themselves, not the surrounding context.
+
+---
+
+### 3. Service Page Conversion Injection
+
+**Page:** /what-we-do/* (13 service pages)
+**What to test:** Add contextually relevant conversion elements to service pages that currently have zero conversion paths.
+
+**Current state:** The 13 service pages under /what-we-do/* receive 4,224 sessions over 90 days (1,408/mo) with 0% conversion rate. No form, no CTA to a resource download, no content offer, and no path to /contact is prominently surfaced. These pages describe Embark's offerings but provide no mechanism to capture visitor interest. Opportunity sizing estimates ~22 additional conversions/month if a 3% capture rate is achieved.
+
+**Baseline:** 1,408 sessions/mo, 31.6% bounce, 0.0% CVR
+**Test Feasibility:** Cannot estimate (no current CVR baseline). If targeting 3% capture rate: ~4 weeks at 15% MDE. Feasible once a conversion mechanism exists.
+
+**Proposed change:** Add below-the-fold contextual CTAs on each service page linking to a relevant resource download. Match the resource to the service: the M&A consulting page links to the post-merger integration checklist (already converting at 6.44% on its own page); the financial advisory page links to the ASC 606 template; the Office of the CFO page links to the 13-week cash flow template. Each CTA follows the pattern: "[Service-specific pain point]? Download our [resource name]."
+
+> **Before:** Service pages end with no conversion element.
+> **After:** "Navigating a post-merger integration? Download our Post-Merger Integration Checklist -- used by finance teams at companies from $50M to $5B in revenue." [Gated download form: name, email, company]
+
+**Why this should work:** Visitors on service pages have demonstrated interest in a specific capability. They're evaluating whether Embark can solve their problem. A contextually matched resource download converts this evaluation intent into a lead capture moment. The resource itself provides value (the visitor gets a useful tool), while the download form captures contact information for nurture. This is not a hard sell -- it's offering the logical next step. The resources already convert at 6.55% when visitors find them directly. The service pages are simply missing the bridge.
+
+**Target metric:** Primary: form_submit rate on service pages (currently 0%). Secondary: downstream contact_us_form_submit within 30 days of resource download.
+**Audience:** All service page visitors. Highest priority: /what-we-do/m-and-a-consulting (PE-backed companies in transaction) and /what-we-do/financial-advisory-consulting (635 sessions, highest individual service page traffic).
+
+**Scores:** Impact 4 | Confidence 4 | Ease 4
+- Impact 4: 1,408 monthly sessions with zero conversion is a structural gap, not a marginal optimization. The opportunity sizing identifies this as a "large" impact opportunity. Resource downloads are the primary MQL driver for Embark.
+- Confidence 4: The resources already convert well on their own pages (12.66% for the cash flow template, 6.44% for the post-merger checklist). Adding a contextual bridge to high-traffic pages is a validated pattern. Full traffic baseline exists.
+- Ease 4: Requires adding CTA blocks to CMS templates. Resources and gated forms already exist. Main effort is matching content to pages and creating the CTA copy.
+
+**What a win proves:** Service pages can function as mid-funnel conversion points, not just informational dead-ends. Validates that Embark's resource library is a conversion asset that should be surfaced contextually, not buried in a resource hub. Informs a site-wide strategy of matching content offers to visitor intent by page.
+
+**What a loss teaches:** Service page visitors may have different intent than expected -- perhaps they're researching capabilities rather than evaluating solutions. If CTA impressions are high but clicks are low, the resource match may be wrong. If clicks are adequate but form completions are low, the form itself is the barrier (test form optimization next).
 
 ---
 
 ## Strategic Bets
 
-### 4. Homepage Hero: Differentiation-Led Messaging with Proof
+### 4. Specificity Injection on Homepage
 
-**Page:** /
-**What to test:** Replace the generic carousel hero with a static, differentiation-led hero section that leads with Embark's unique positioning and proof, replacing aspirational language with specific claims backed by quantified evidence.
+**Page:** Homepage (/)
+**What to test:** Replace generic outcome language in the homepage body copy with specific, quantified results from published case studies.
 
-**Current state:** The homepage hero is a three-slide carousel. Slide 1 uses the headline "High-impact consulting for growing companies" with the subhead "At Embark, we help ambitious businesses scale into their next chapter with strategic guidance and hands-on support." Slides 2 and 3 promote downloadable templates (controller transition template, external audit preparation guide). CTAs are "What we do" and "Talk to an advisor." None of Embark's structural differentiators (NPS 93, 9% attrition, 91% client retention, Happy Works, Big 4 Alumni talent) appear above the fold. The carousel dilutes the first impression by rotating between positioning and resource promotions. The content offers in slides 2-3 are not driving conversion: the homepage has 0% CVR despite the carousel templates being visible to all 6,673 monthly visitors.
-**Baseline:** 6,673 sessions/mo, 59.5% bounce (up 13.5pp from prior period), 0% CVR, 1.06 pages/session. Carousel slide_navigation events increased 327% period-over-period, suggesting visitors interact with the carousel but don't convert.
-**Test Feasibility:** ~2 weeks at 15% MDE (2 variants, ~1,045 samples/variant) using engagement rate as primary metric. Feasible.
-**Proposed change:** Replace the three-slide carousel with a static hero section containing: (1) differentiation-led headline, (2) proof-backed subhead with specific metrics, (3) single prominent primary CTA with specific language, (4) case study proof strip with quantified outcomes from named clients. All elements serve the same hypothesis: differentiation + proof outperforms generic aspiration.
+**Current state:** Below the fold, the homepage uses generic outcome language: "drive real results," "high-impact," "scale into their next chapter." Meanwhile, Embark has 17 published case studies with quantified outcomes -- Interstate Batteries (96% reduction in bank reconciliation time), Atlas Technical Consultants (two years of audited financials prepared in 4 weeks for SEC filing), Solo Brands (successful IPO with three acquisitions integrated). None of these numbers appear anywhere in homepage copy.
 
-> **Before H1:** "High-impact consulting for growing companies"
-> **After H1:** "Big 4 Alumni advisors who stay, execute, and care"
->
-> **Before subhead:** "At Embark, we help ambitious businesses scale into their next chapter with strategic guidance and hands-on support."
-> **After subhead:** "Financial advisory with an NPS of 93 and 9% attrition, half the Big 4 average. We deploy senior advisors for mid-market and PE-backed companies and stay until the job is done."
->
-> **Before CTAs:** "What we do" / "Talk to an advisor" (two equal-weight options)
-> **After CTA:** "Talk to an advisor" (single primary) with proof strip below: "96% reconciliation time reduction (Interstate Batteries) | 4-week SEC filing from three-way merger (Atlas Technical) | IPO with three acquisitions integrated (Solo Brands)"
+**Baseline:** 6,673 sessions/mo, 59.5% bounce, 0% CVR
+**Test Feasibility:** Cannot estimate (no CVR on homepage). Use engagement metrics: scroll depth or CTA click-through as proxy.
 
-**Why this should work:** B2B buyers decide within 3-5 seconds whether a page is relevant. The current headline ("High-impact consulting for growing companies") is category language that any advisory firm could use. It forces visitors to do cognitive work to figure out what makes Embark different. The proposed version leads with Embark's strongest differentiator (Big 4 Alumni who stay) and immediately backs it with proof no competitor can match (NPS 93, 9% attrition). The carousel currently spreads attention across three slides, two of which promote templates rather than positioning -- and those templates aren't converting anyway (0% homepage CVR despite prominent placement). A static hero eliminates this dilution and focuses the first impression on the message most likely to reduce bounce: "this company is different, and here's the proof." The positioning scorecard identifies Clarity as the top opportunity and Specificity as the top gap. This experiment addresses both simultaneously.
+**Proposed change:** Replace the generic service description tiles with specific proof-anchored tiles. Each tile leads with a quantified case study metric, followed by the service name and a one-line description.
 
-**Target metric:** Engagement rate (inverse of bounce), secondary: /contact page visits from homepage, "Talk to an advisor" CTA click rate
-**Audience:** All homepage visitors
+> **Before:** "Turn complex problems into clear solutions. Game plans into growth. That's Embark."
+> **After:** "Bank reconciliation: 12 hours to 30 minutes. SEC filing: 4 weeks from a three-way merger. IPO prep: three acquisitions integrated. That's what hands-on consulting looks like."
 
-**Scores:** Impact 5 | Confidence 4 | Ease 3
-Impact 5: Highest-traffic page (6,673/mo), worsening bounce trend (+13.5pp), and addresses both the top gap (specificity) and top opportunity (clarity) from the positioning scorecard. A win here changes the entire site's conversion trajectory. Confidence 4: "Before" copy is exact text from the website. "After" copy adapts directly from the positioning statement and channel adaptations. GA4 data confirms worsening bounce trend. Traffic adequacy is high. Capped at 4 (no evidence module calibration data). Ease 3: Requires carousel removal, layout restructuring for static hero, proof strip creation, and CTA consolidation. More than a copy swap. Moderate development effort.
+> **Before service tile:** "Deal Advisory & M&A -- Solving complex business challenges with industry-leading expertise."
+> **After service tile:** "Deal Advisory & M&A -- We prepared two years of audited financials in 4 weeks for Atlas Technical's SEC filing after a three-way merger."
 
-**What a win proves:** Differentiation-led, proof-backed messaging resonates more than generic aspirational copy. Validates extending this approach to service pages (Experiment #6) and informs the content of personalized hero variants (Experiment #10).
-**What a loss teaches:** Visitors may value the aspiration-first framing ("growing companies," "next chapter"), or the proof metrics may not carry meaning for visitors unfamiliar with NPS or attrition benchmarks. Would suggest testing proof-first (case studies above fold) separately from differentiation-first (headline change) to isolate which element failed.
+**Why this should work:** Specificity signals credibility. The positioning scorecard identifies specificity as the top gap: Embark's outcomes exist in case studies but not in marketing copy. "High-impact consulting" forces the visitor to trust a claim on faith. "12 hours to 30 minutes" is verifiable and memorable. For CFOs and finance leaders evaluating advisory firms, specific operational metrics (time reduction, audit outcomes, process automation) are the proof currency. They're evaluating "can this firm actually deliver?" not "does this firm have nice copy?"
+
+**Target metric:** Primary: CTA click-through rate and engagement with service tiles. Secondary: bounce rate.
+**Audience:** All visitors, particularly CFO persona (primary buyer).
+
+**Scores:** Impact 4 | Confidence 4 | Ease 5
+- Impact 4: Addresses the scorecard's top gap (specificity). Homepage is highest traffic. But separated from Experiment 1 because this targets body copy, not ATF -- different page zone, different mechanism.
+- Confidence 4: Exact case study metrics available from published case studies. Before copy is directly observed. Specificity-over-vagueness is one of the most validated CRO principles.
+- Ease 5: Pure copy changes. Swap existing text for case study metrics. No structural or design changes.
+
+**What a win proves:** Quantified case study outcomes are more effective positioning copy than generic aspirational language. Validates that specificity -- not just clarity -- drives engagement for Embark's buyer profile. Creates a playbook: every service page, ad, and sales asset should lead with a specific metric.
+
+**What a loss teaches:** Either the specific metrics chosen don't resonate with the homepage audience (too operational, not strategic enough for C-suite visitors), or the homepage audience is too top-of-funnel for proof to matter yet. Segment by traffic source: if organic visitors respond but paid don't, the issue is awareness-stage mismatch, not content quality.
+
+**Dependency note:** This experiment should run after Experiment 1 (Homepage Clarity Overhaul) wins or loses. The headline sets the positioning frame; specificity in body copy supports it. Running specificity injection under a generic headline tests specificity in a hostile context.
 
 ---
 
-### 5. Contact Page: Paid Traffic Message Alignment
+### 5. Cross-Network Ad-Message Alignment on Contact Page
 
 **Page:** /contact
-**What to test:** Align the contact page experience with paid campaign messaging for Cross-network (Performance Max) visitors, who currently convert at less than one-fifth the rate of Direct visitors.
+**What to test:** Create a paid-traffic variant of the /contact page with headline and context matched to the ad creative that drives cross-network (Google Ads) traffic.
 
-**Current state:** Cross-network (Google Ads PMax) drives 3,084 sessions per 90 days to /contact, making it the dominant traffic source for this page (82% of landing sessions). These visitors convert at 0.42% (unified CVR), while Direct traffic converts at 2.24%, a 5.3x gap. The contact page presents the same generic experience regardless of traffic source: no message matching to ad creative, no campaign-specific value reinforcement, and full site navigation offering multiple exit paths. The contact_us_form_submit Key Event shows 52 completions on /contact over 90 days.
-**Baseline:** 1,480 sessions/mo total, 63.1% bounce, 1.19% unified CVR. Cross-network: ~1,028 sessions/mo, 0.42% CVR.
-**Test Feasibility:** ~7 weeks at 15% MDE (2 variants, ~1,214 samples/variant) using engagement rate as primary metric. Extended. Form completion CVR would require >300 weeks. Consider form_start as micro-conversion metric for faster signal.
-**Proposed change:** For visitors arriving from Cross-network campaigns (identified by UTM parameters or campaign source), serve a modified contact page variant: (1) headline that echoes the ad campaign's value proposition, (2) form context reinforcement ("What happens next: a 15-minute call with a senior advisor to discuss your situation"), (3) relevant proof point adjacent to the form (e.g., NPS 93 or a short testimonial from a CFO), (4) reduced navigation to minimize exit paths.
+**Current state:** Cross-network (Google Ads) drives 3,084 sessions to /contact over 90 days but converts at only 0.42% CVR vs direct traffic at 2.24% -- a 5.3x gap. This is the second-largest sized opportunity in the performance data (estimated 7-8 additional conversions/month). The contact page likely shows the same generic experience regardless of how the visitor arrived. Ad-to-page messaging mismatch is the most probable explanation for the gap: the ad promises one thing, the page delivers a generic experience.
 
-> **Before:** Generic /contact page for all visitors. No ad-message continuity. Full site navigation. No form reinforcement.
-> **After (paid variant):** Headline matching PMax ad theme + "What you'll get: A 15-minute call with a Big 4 Alumni advisor to discuss your specific situation. No pitch. No obligation." + proof: "NPS of 93. 91% of our clients come back." + streamlined navigation.
+**Baseline:** 1,028 sessions/mo from cross-network to /contact, 0.42% CVR (cross-network), 2.24% CVR (direct)
+**Test Feasibility:** ~18 weeks at 15% MDE targeting cross-network traffic only (2 variants, ~2,100 samples/variant). Extended. Consider unified CVR (form_submit + contact_us_form_submit) for faster signal.
 
-**Why this should work:** Paid visitors arrive with a specific expectation set by the ad creative. When the landing page doesn't echo that promise, cognitive dissonance causes immediate exit. The 5.3x conversion gap between Direct and Cross-network on /contact is strong evidence of a message-match failure. Direct visitors already know Embark (they typed the URL). Paid visitors need the page to confirm they're in the right place. Additionally, form context reinforcement ("what happens next") reduces submission anxiety by setting clear expectations. Full navigation on a conversion page gives paid visitors multiple low-intent exit paths that compete with the form.
+**Proposed change:** For visitors arriving from Google Ads (cross-network/CPC UTM), show a modified contact page: (1) Headline that echoes the ad's promise -- if the ad targets "outsourced CFO" searches, the page headline should be "Talk to an Outsourced CFO Advisor" not the generic contact heading. (2) Reduce or remove full site navigation for paid visitors (single conversion path). (3) Add proof specific to the ad's topic (e.g., if the ad targets M&A, surface the Atlas Technical case study). Scope this variant to paid traffic only using UTM targeting.
 
-**Target metric:** Form start rate (micro-conversion), secondary: contact_us_form_submit rate, bounce rate
-**Audience:** Cross-network (PMax) visitors landing on /contact
+**Why this should work:** Paid visitors arrive with a specific expectation set by the ad. Two things break that expectation: the page headline doesn't echo the ad's promise (cognitive dissonance at arrival), and full site navigation offers escape routes before the value proposition lands. The 5.3x CVR gap between direct and cross-network traffic on this page is strong evidence of message mismatch -- direct visitors arrive with intent; paid visitors arrive with an expectation that the page doesn't fulfill.
+
+**Target metric:** Primary: contact_us_form_submit rate for cross-network traffic. Secondary: form_start rate (leading indicator).
+**Audience:** Cross-network (Google Ads) visitors to /contact only.
 
 **Scores:** Impact 4 | Confidence 4 | Ease 3
-Impact 4: Primary conversion page with a documented 5.3x CVR gap between channels. Closing even 20% of this gap on 1,028 monthly paid sessions would add 3-4 incremental contact form completions per month. Confidence 4: Performance data confirms the channel-specific gap. The mechanism (message match + form reinforcement) is well-established in landing page optimization. GA4 traffic adequacy is high. Ease 3: Requires audience targeting capability in the testing platform (UTM-based), ad creative review for message matching, and page variant with modified headline, reinforcement copy, and navigation changes.
+- Impact 4: The opportunity sizing estimates 7-8 additional conversions/month. Cross-network is the highest-converting channel by Key Event CVR (0.23%) but underperforms dramatically on /contact specifically.
+- Confidence 4: The 5.3x CVR gap between channels on the same page is strong evidence of a correctable mismatch. Ad-message alignment is a well-validated pattern.
+- Ease 3: Requires audience targeting by UTM in the testing platform, creating a variant page (or dynamic content), and understanding the actual ad creative to match. Multiple ad campaigns may need multiple variants.
 
-**What a win proves:** The paid-to-page messaging gap is the primary conversion blocker for PMax traffic. Validates building dedicated landing pages for future paid campaigns rather than sending all traffic to the generic /contact page.
-**What a loss teaches:** The conversion gap may not be a messaging problem. PMax audience targeting may be too broad (attracting low-intent clicks), or the form itself may be the friction point regardless of surrounding copy. Would suggest auditing PMax audience segments before further page optimization.
+**What a win proves:** The CVR gap was caused by message mismatch, not traffic quality. Ad-aligned landing experiences work for Embark's paid traffic. Creates a template for all future paid campaigns: dedicated or dynamic landing page variants matched to ad creative.
 
----
-
-### 6. Service Page Differentiation with Contextual Conversion Paths
-
-**Page:** /what-we-do/* (13 service sub-pages)
-**What to test:** Redesign service sub-pages with differentiation content blocks, relevant case study metrics, and contextual resource CTAs matched to the service area, replacing current generic descriptions with no conversion mechanism.
-
-**Current state:** All 13 service sub-pages under /what-we-do/* collectively receive 1,408 sessions/mo with a group conversion rate of 0%. No conversion mechanism exists on any service page. The copy uses generic language: "Solving complex business challenges with industry-leading expertise and world-class hospitality" (positioning scorecard flags "industry-leading" as a generic superlative that breaks voice rules). The competitive claim overlap score is 0.50, meaning half of Embark's service-level claims could appear on a competitor's page unchanged. Embark has 17 published case studies with 6 quantified outcomes and 5 named clients, none of which are surfaced on service pages.
-**Baseline:** 1,408 sessions/mo (group), 31.6% bounce, 0% CVR. Individual page traffic: /what-we-do/financial-advisory-consulting (212/mo), /what-we-do (538/mo), /what-we-do/m-and-a-consulting (~100/mo), others <100/mo each.
-**Test Feasibility:** Cannot estimate (no conversion rate baseline). Group-level engagement metrics are feasible. Individual page testing is impractical at current traffic levels.
-**Proposed change:** For the top 3-4 service pages by traffic, add: (1) a differentiation content block highlighting what makes Embark's approach unique for this service (e.g., for FARS: "Big 4 Alumni advisors with a 91% client retention rate handling your complex transactions"), (2) a relevant case study proof point (e.g., M&A page: "Atlas Technical: two years of audited financials prepared in 4 weeks for SEC filing from a three-way merger"), (3) a contextual resource CTA matching the service area (e.g., M&A page: "Download: Post-Merger Integration Checklist").
-
-> **Before (financial-advisory-consulting):** "Solving complex business challenges with industry-leading expertise and world-class hospitality." No case studies. No conversion CTA. No differentiation from competitors.
-> **After:** "Big 4 Alumni financial advisors with an NPS of 93 and 91% client retention. We reduced Interstate Batteries' bank reconciliation from 12 hours to 30 minutes." + Case study card + "Download: Audit Readiness Checklist" CTA.
-
-**Why this should work:** Service page visitors are in evaluation mode, comparing Embark against 3-5 similar firms. When every vendor's page says "we help you with financial reporting," none stands out. Injecting specific differentiators (quantified culture proof, named case study outcomes) breaks the comparison pattern and creates a mental anchor that persists through the evaluation process. The contextual resource CTA adds a conversion mechanism to a page group that currently captures zero leads from 1,408 monthly sessions. Embark's resource templates already convert at 6.55% on their own pages, and service pages provide stronger buying intent context for the same content.
-
-**Target metric:** Resource CTA click-through rate (new), secondary: engagement rate, /contact page visits from service pages
-**Audience:** All service page visitors, with particular relevance to CFO and COO personas evaluating specific capabilities
-
-**Scores:** Impact 4 | Confidence 3 | Ease 3
-Impact 4: 1,408 sessions/mo with zero conversion represents a major structural opportunity. Performance profile sizes this as "large" impact: ~22 additional conversions/month at a conservative 3% capture rate (combined with industry pages). The current state is complete conversion absence. Confidence 3: Trigger conditions confirmed (generic copy, 0% CVR, case studies available), but "before" copy is described from messaging gap analysis rather than exact page text. Competitive landscape confidence is 2, limiting certainty about differentiation effectiveness. Ease 3: Requires content creation for differentiation blocks and case study cards across multiple pages, plus resource CTA integration. Can be templated, but still requires per-page adaptation.
-
-**What a win proves:** Service page visitors respond to differentiation content and will convert on contextual resource offers. Validates the broader strategy of turning service pages from brochures into conversion-capable assets. Directly informs Experiment #7 (industry pages).
-**What a loss teaches:** The conversion gap on service pages may be intent-based (visitors come to learn about capabilities, not to engage yet), or the generic copy may not be the conversion blocker (page structure or CTA placement could be). Would suggest testing CTA placement and offer type independently from content changes.
+**What a loss teaches:** The gap may be traffic quality rather than page experience -- cross-network audiences may be less qualified regardless of page messaging. If form_start improves but submit doesn't, the mismatch is in the form, not the page context. If neither metric moves, investigate whether cross-network traffic is fundamentally different in intent (brand awareness vs. lead generation campaigns).
 
 ---
 
-### 7. Industry Page: Vertical-Specific Proof and Conversion Paths
+### 6. Service Page Differentiation Injection
 
-**Page:** /who-we-serve/* (7 industry sub-pages)
-**What to test:** Add industry-specific case study proof and contextual conversion CTAs to industry pages, converting a zero-conversion page group into an active lead capture mechanism.
+**Page:** /what-we-do/* (starting with /what-we-do/financial-advisory-consulting, 635 sessions)
+**What to test:** Add Embark-specific differentiation blocks to service pages that currently read like generic category descriptions.
 
-**Current state:** The 7 industry sub-pages under /who-we-serve/* collectively receive 1,277 sessions per 90 days (426 sessions/mo) with a group conversion rate of 0%. The /who-we-serve hub page itself gets 382 sessions with 22.5% bounce and 77.5% engagement rate, indicating strong interest in industry-specific content. Like service pages, no conversion mechanism exists on any industry page. Embark serves 19 industries with specific buying triggers per vertical (PE-backed companies: audit readiness + M&A complexity; energy: ESG compliance + commodity accounting; healthcare: regulatory compliance + revenue cycle). The competitive landscape identifies ESG advisory from a non-CPA firm as unclaimed white space. None of the 17 published case studies with quantified outcomes are surfaced on industry pages.
-**Baseline:** 426 sessions/mo (group), 31.6% bounce, 0% CVR. /who-we-serve hub: 382 sessions, 22.5% bounce, 77.5% engagement. Individual industry page traffic is below 100 sessions/mo each.
-**Test Feasibility:** Cannot estimate (no conversion rate baseline). Group-level engagement metrics are feasible but slow at 426 sessions/mo. Pre/post recommended for individual pages.
-**Proposed change:** For the top 2-3 industry pages by traffic, add: (1) an industry-specific pain statement tied to a buying trigger (e.g., energy: "ESG reporting compliance deadline approaching. Commodity accounting complexity growing."), (2) a named case study from that vertical with a quantified outcome, (3) an industry-contextual CTA (not a generic template download but a vertical-relevant offer: e.g., "See how we prepared Atlas Technical's SEC filing in 4 weeks" or "Download: Post-Merger Integration Checklist for PE Portfolio Companies").
+**Current state:** Service page copy reads generically: "Solving complex business challenges with industry-leading expertise and world-class hospitality." The word "industry-leading" breaks Embark's own voice rules (no unqualified superlatives). Competitive analysis shows high claim overlap on "strategy + execution" (shared by 6 of 7 direct competitors) and "Office of the CFO" (shared by 5). Service pages could belong to any competitor in the space. Meanwhile, Embark's unique differentiators (NPS 93, 9% attrition, hospitality framing) appear nowhere on these pages.
 
-> **Before (/who-we-serve/[industry]):** Generic industry description. No case studies. No conversion CTA. No differentiation from competitors who claim the same verticals.
-> **After (energy example):** "Big 4 Alumni advisors with deep energy sector experience. ESG reporting readiness, commodity accounting, and operational finance for oil & gas, renewables, and infrastructure." + Named case study card + "Talk to an energy sector advisor" CTA.
+**Baseline:** 1,408 sessions/mo across services group, 31.6% bounce, 0.0% CVR
+**Test Feasibility:** Dependent on Experiment 3 succeeding first (need a conversion mechanism to measure against). If 3% capture rate is achieved from Experiment 3: ~6 weeks at 15% MDE on the combined services group. Feasible.
 
-**Why this should work:** Industry page visitors arrive with a vertical-specific lens. A CFO at a PE-backed energy company evaluating advisors cares that Embark has energy experience, not just general consulting credentials. Generic industry pages force buyers to infer relevance ("do they actually know our sector?"). Industry-specific proof eliminates this inference step. The competitive landscape shows most competitors claim broad industry coverage without vertical-specific proof -- Embark's named case studies across 15+ industries are a genuine differentiation advantage that isn't deployed. Additionally, the /who-we-serve hub's 77.5% engagement rate signals that visitors arriving at industry content are engaged and evaluating.
+**Proposed change:** On each service page, add a differentiation block after the service description. The block surfaces: (1) the specific Embark advantage for that service ("Our financial advisors have a 9% attrition rate -- half the Big 4 average. The team assigned to your engagement is the team that finishes it."), (2) a relevant case study metric from that service area, and (3) a comparison point vs. the status quo ("Traditional firms: junior associates learning on the job. Embark: Big 4 Alumni advisors who've done this before.").
 
-**Target metric:** Resource CTA click-through rate (new), secondary: engagement rate, /contact page visits from industry pages
-**Audience:** Industry page visitors, particularly those arriving from industry-specific search queries or paid campaigns
+> **Before:** "Solving complex business challenges with industry-leading expertise and world-class hospitality."
+> **After:** "Financial Advisory from Big 4 Alumni consultants -- with 91% client retention to prove we mean it. When Interstate Batteries needed bank reconciliation overhauled, we reduced processing time from 12 hours to 30 minutes."
 
-**Scores:** Impact 3 | Confidence 3 | Ease 3
-Impact 3: 426 sessions/mo is moderate traffic, and individual page volumes are too low for per-page testing. Combined with service pages (Experiment #6), the total zero-conversion opportunity is 1,834 sessions/mo. Industry pages contribute the smaller share. Confidence 3: The structural gap (0% CVR, no conversion path) is confirmed. The mechanism (proof + CTA) is the same as Experiment #6, applied to a different page group. Capped at 3 because individual industry page content hasn't been reviewed, and case study-to-industry mapping may require new content. Ease 3: Same templated approach as service pages, but requires industry-specific case study matching and potentially new case study cards for industries where quantified outcomes aren't yet published.
+**Why this should work:** B2B buyers evaluating service pages are in comparison mode. They're reading 3-5 similar firms' descriptions. When every vendor says "we help you with financial reporting," none stands out. Injecting specific differentiators (9% attrition, named case study outcomes, comparison to traditional firms) gives the comparison-mode buyer a reason to remember Embark. The competitive landscape confirms that Embark's culture proof and hospitality positioning are genuinely unique -- but that uniqueness is invisible on service pages.
 
-**What a win proves:** Industry-framed visitors convert on vertical-specific proof and CTAs. Validates investing in deeper industry content (dedicated landing pages, industry-specific resources) and informs whether Embark should lead with industry expertise or service capability in paid campaigns.
-**What a loss teaches:** Industry page visitors may be too early in their journey to convert (browsing sectors rather than evaluating a specific advisor). Or the industry pages may attract informational traffic (students, journalists, competitors) rather than buyers. Would suggest traffic source analysis of industry pages before further investment.
+**Target metric:** Primary: conversion rate on service pages (post-Experiment 3 CTA implementation). Secondary: time on page and scroll depth as engagement proxies.
+**Audience:** All service page visitors. Expected highest impact on visitors from organic search ("financial consulting firm," "CFO advisory services") who are actively comparing providers.
+
+**Scores:** Impact 4 | Confidence 3 | Ease 4
+- Impact 4: High claim overlap in competitive landscape means generic copy actively hurts Embark's position. Differentiation blocks address this directly on 1,408 sessions/mo.
+- Confidence 3: Strong strategic basis but before copy is inferred (exact service page copy partially available). The mechanism is sound but the specific differentiator-to-service mapping hasn't been tested.
+- Ease 4: Copy additions to existing pages. No structural changes. Case study content and proof points already exist.
+
+**What a win proves:** Differentiation-led service page copy outperforms generic category language for financial advisory buyers in evaluation mode. Establishes a template for all 13 service pages.
+
+**What a loss teaches:** Service page visitors may be too early in the funnel for differentiation to matter -- they might be at the "what does this firm do" stage rather than "how is this firm different." If so, focus differentiation on deeper pages (/about, /happy-works) where visitors have already decided the category fits.
+
+---
+
+### 7. About Page Proof Hierarchy Restructure
+
+**Page:** /about
+**What to test:** Restructure the About page to lead with quantified proof of capability rather than mission and values statements.
+
+**Current state:** The /about page receives 1,020 sessions over 90 days with a 22.9% bounce rate (strong engagement). The page likely leads with narrative content about Embark's philosophy and mission. Meanwhile, the strongest proof points -- NPS 93, Deloitte Global CEO Barry Salzberg on the board, $7M to $149M revenue growth, 9% attrition -- may be buried below the fold or on separate pages (/happy-works). The About page is the 10th most-visited page on the site.
+
+**Baseline:** 340 sessions/mo, 22.9% bounce, no CVR data for this page
+**Test Feasibility:** Cannot estimate (no conversion events tracked on /about). Use downstream metric: /contact page visits originating from /about within the same session.
+
+**Proposed change:** Restructure the About page to lead with a "proof-first" hierarchy: (1) Quantified credentials strip: NPS 93, 9% attrition, 91% retention, 26 offices, $149M revenue. (2) Institutional proof: Barry Salzberg (former Deloitte Global CEO) on board, Parthenon Capital investment. (3) Team credential highlights: Big 4 Alumni background, average years of experience. (4) Then mission/values/culture narrative. Proof first, philosophy second.
+
+**Why this should work:** Visitors reaching the About page are evaluating trust, not seeking inspiration. They're asking "Can this company actually deliver?" Mission statements answer a question nobody on the About page is asking. Leading with proof (NPS 93, board-level institutional credibility, revenue growth trajectory) directly addresses the trust evaluation. Culture narrative and Happy Works philosophy provide context after trust is established. The About page has strong engagement (22.9% bounce, 65s avg duration) -- visitors are reading. The question is whether what they read first builds trust efficiently.
+
+**Target metric:** Primary: downstream /contact page visits originating from /about. Secondary: click-through to /happy-works or /team from /about.
+**Audience:** All /about page visitors. Likely includes referred prospects verifying company credibility after a sales conversation.
+
+**Scores:** Impact 4 | Confidence 3 | Ease 4
+- Impact 4: The About page is critical for services companies where trust evaluation drives conversion. High engagement (22.9% bounce) means visitors are reading -- the experiment optimizes what they read first. For financial advisory, team and institutional credibility are primary decision factors.
+- Confidence 3: About page layout is inferred, not directly confirmed. The proof hierarchy principle is well-established in CRO, but exact current page structure is an assumption. Strong proof points exist.
+- Ease 4: Primarily content reordering. Proof points already exist. No new content needed, just restructured presentation.
+
+**What a win proves:** Proof-first positioning on trust evaluation pages accelerates the path to conversion. Validates that Embark's quantified metrics (NPS, attrition, retention) function as effective trust signals, not just marketing claims.
+
+**What a loss teaches:** About page visitors may already be past the trust evaluation stage (perhaps post-sales-call verification where they want the narrative, not the numbers). If engagement metrics stay flat, the page may already be optimized for its actual audience. Segment by referral source to determine if the visitors are pre-sale (need trust) or post-sale (want narrative).
 
 ---
 
 ## Explorations
 
-### 8. Returning Visitor Differentiated Experience
+### 8. Industry Page Conversion Path + Proof
 
-**Page:** Site-wide
-**What to test:** Serve a differentiated experience to returning visitors, recognizing their familiarity with Embark and accelerating them toward conversion instead of repeating the same first-visit messaging.
+**Page:** /who-we-serve/* (7 industry pages)
+**What to test:** Add industry-matched conversion CTAs and proof points to industry pages that currently have zero conversion paths.
 
-**Current state:** Returning visitors represent 9.4% of traffic (6,104 sessions per 90 days) but convert at 2.5x the rate of new visitors (2.06% vs. 0.83% unified CVR). They spend 4.2x longer on site (245s vs. 58s) and bounce 18pp less (52.7% vs. 70.4%). Despite this significantly higher intent, returning visitors see the exact same homepage, service pages, and CTAs as first-time visitors. The site's 90% new-visitor composition means all messaging is calibrated for first impressions, not for visitors who already know what Embark does and are returning to take action. Both new and returning CVRs declined from the prior period (new: 2.83% to 0.83%, returning: 4.59% to 2.06%), but returning visitors remain the highest-converting identifiable segment.
-**Baseline:** 2,035 returning sessions/mo, 52.7% bounce, 2.06% unified CVR, 245s avg engagement.
-**Test Feasibility:** ~4 weeks at 15% MDE (2 variants, ~1,045 samples/variant) using engagement rate on returning segment. Requires audience segmentation in testing platform (new vs. returning cookie). Feasible if platform supports it.
-**Proposed change:** For identified returning visitors (via cookie or GA4 user state), modify the homepage experience: (1) skip the positioning pitch and lead with a direct CTA: "Welcome back. Ready to talk to an advisor?", (2) surface case study proof instead of generic value props (they already know the value props), (3) optionally show a "What's new" element if there's recent content (new case study, new resource). On /contact, returning visitors see simplified form reinforcement: "You've been here before. Here's what happens next: a 15-minute call, no obligation."
+**Current state:** The 7 industry pages under /who-we-serve/* receive 1,277 sessions over 90 days (426/mo) with 0% CVR and 31.6% bounce. Like service pages, these describe Embark's industry coverage without offering any mechanism for content download or lead capture. The copy reads generically: "Supporting high-growth SaaS and tech organizations with specialized guidance" -- no proof, no specificity, no differentiation.
 
-> **Before:** All visitors see the same homepage and /contact experience regardless of visit history.
-> **After (returning visitor):** Homepage hero: "Welcome back. Our Big 4 Alumni advisors are ready when you are. [Talk to an advisor]" + latest case study card + "Since your last visit: [new resource or case study]". /contact: "You've been researching. Let's talk. A 15-minute call with a senior advisor to discuss your specific situation."
+**Baseline:** 426 sessions/mo, 31.6% bounce, 0.0% CVR
+**Test Feasibility:** ~8 weeks at 15% MDE if 3% capture rate is achieved (post-CTA injection). Feasible on combined group. Individual industry pages have insufficient traffic for standalone tests.
 
-**Why this should work:** A returning visitor has already answered "what does this company do?" Their questions are now "should I engage?" and "how do I start?" Repeating the positioning pitch wastes their higher intent. B2B buying cycles often involve 3-7 website visits before a conversion event. By the second or third visit, the visitor needs acceleration, not re-education. The 2.5x conversion rate gap proves returning visitors are fundamentally different from new ones. Tailoring the experience to their stage should widen this gap further.
+**Proposed change:** On each industry page, add: (1) an industry-matched case study summary (e.g., energy page gets the Presidio Petroleum case study: "10x well-count increase, 6x headcount growth with only 10 office employees"), (2) a contextual resource download CTA matched to the industry's primary pain point, and (3) industry-relevant client testimonials if available.
 
-**Target metric:** Returning visitor engagement rate, secondary: returning visitor contact_us_form_submit rate, returning-to-new CVR ratio
-**Audience:** Returning visitors (identified by cookie/user state), all pages but primarily homepage and /contact
+**Why this should work:** Industry page visitors have self-selected into a specific vertical. They're asking "Does this firm understand MY industry?" Generic copy answers "we serve many industries." Industry-matched proof (named case studies, vertical-specific metrics) answers the actual question. The combination of proof and a conversion path transforms these pages from informational dead-ends into lead capture points.
 
-**Scores:** Impact 3 | Confidence 3 | Ease 2
-Impact 3: 2,035 sessions/mo is a meaningful segment, and the 2.06% baseline CVR provides room for improvement. Lifting returning CVR from 2.06% to 3% would add ~2 additional contact form completions per month. Not transformational in absolute terms, but validates a high-leverage pattern. Confidence 3: The returning-visitor intent signal is strong (2.5x CVR, 4.2x engagement time). The mechanism (differentiated messaging by visit stage) is well-established in B2B. Capped at 3 because: (a) returning visitor composition is unknown (could be employees, partners, or repeat job seekers, not just buyers), (b) the prior-period CVR decline affected returning visitors too, suggesting external factors beyond messaging. Ease 2: Requires visitor identification (new vs. returning) in the testing platform, conditional content rendering, and creation of returning-visitor variants for homepage and /contact. More complex than a simple copy swap.
+**Target metric:** Primary: form_submit rate on industry pages. Secondary: downstream /contact visits from industry pages.
+**Audience:** Industry-specific visitors. Highest priority: energy (3 case studies available: Presidio Petroleum, oil & gas E&P, energy sector streamlining) and healthcare (1 case study: leading home healthcare provider).
 
-**What a win proves:** Visit-stage personalization materially improves conversion for returning visitors. Validates investing in a multi-visit journey model (first visit = positioning, second visit = proof, third visit = conversion acceleration) and informs the personalization infrastructure needed for Experiment #10.
-**What a loss teaches:** Returning visitors may already be converting at their natural ceiling, or the "returning" segment may be contaminated with non-buyer traffic (employees, partners, job seekers returning to check listings). Would suggest decomposing returning traffic by landing page to isolate the buyer subset before further personalization investment.
+**Scores:** Impact 3 | Confidence 3 | Ease 4
+- Impact 3: Lower traffic than service pages (426/mo vs 1,408/mo). Impact is real but volume-limited.
+- Confidence 3: Mechanism is sound but case study matching is incomplete (17 case studies across 15+ industries, but many are anonymized). Only 4 of 17 case studies have named clients. Proof matching to specific industry pages requires verification.
+- Ease 4: Same implementation pattern as Experiment 3. Copy additions to existing templates.
 
----
+**What a win proves:** Industry-matched proof converts better than generic industry descriptions. Creates a template for expanding industry pages with case study content.
 
-### 9. Blog Content: Organic Entry Point Capture
-
-**Page:** Root-level blog posts (/research-and-development-accounting, /methods-for-a-summary-of-misstatements-*, and similar)
-**What to test:** Add contextual service CTAs and resource offers to high-traffic blog posts that currently serve as organic entry points with no conversion path.
-
-**Current state:** Several root-level blog posts attract meaningful organic traffic but have zero conversion mechanisms. /research-and-development-accounting receives 441 sessions with 81.0% bounce and is the only page flagged for shallow_engagement (0.86 pages/session, 19.0% engagement rate) -- visitors arrive from organic search, don't find what they need, and immediately leave. /methods-for-a-summary-of-misstatements-iron-curtain-vs.-rollover-approach receives 272 sessions with 55.5% bounce. These pages bring visitors who are searching for specific accounting topics that map directly to Embark's service expertise, but the content provides no bridge to Embark's advisory offerings. The career path guide (/resources/guides/the-career-path-guide-for-big-4-cpas at 443 sessions, 55.8% bounce) is in the Resources group but converts at ~0% while the group average is 6.55%.
-**Baseline:** Combined ~1,200 sessions/90 days across root-level blog content. /research-and-development-accounting: 441 sessions, 81% bounce, shallow_engagement. /methods-for-misstatements: 272 sessions, 55.5% bounce. Career path guide: 443 sessions, 55.8% bounce, ~0% CVR.
-**Test Feasibility:** Individual page traffic is too low for A/B testing. Pre/post recommended with group-level measurement. Can instrument CTA clicks as a new baseline metric across all blog pages simultaneously.
-**Proposed change:** For blog posts with >200 sessions/90 days, add: (1) a contextual service CTA that maps the blog topic to an Embark capability (e.g., R&D accounting post: "Need help with R&D accounting treatment? Our Big 4 Alumni FARS advisors handle complex technical accounting."), (2) a relevant resource download link (e.g., R&D accounting post: link to ASC 606 template or similar), (3) a brief Embark positioning line that connects the educational content to advisory value.
-
-> **Before (/research-and-development-accounting):** Blog content about R&D accounting methods. No CTA. No link to Embark's services. No resource offer. Visitors arrive from organic search and leave.
-> **After:** Same blog content plus: sidebar or end-of-article CTA: "Complex accounting treatments like R&D capitalization require hands-on expertise. Our FARS advisors have helped companies like Interstate Batteries reduce reconciliation time by 96%. [Talk to a FARS advisor]" + "Download: ASC 606 Revenue Recognition Template" link.
-
-**Why this should work:** Blog visitors arrive with a specific technical question. They're often mid-level accounting professionals (controllers, VPs of finance) who influence or make advisory hiring decisions. The current content answers their question but gives them no reason to think of Embark as anything other than a blog. Adding a contextual CTA that connects the blog topic to Embark's service capability plants a seed: "the people who wrote this article also do this as a service." The R&D accounting page's 81% bounce and shallow_engagement flag suggest the current content may not even answer the visitor's question well -- adding richer content alongside a service CTA addresses both the content gap and the conversion gap.
-
-**Target metric:** CTA click-through rate (new), secondary: resource download rate, /contact page visits from blog content
-**Audience:** Organic search visitors landing on root-level blog posts
-
-**Scores:** Impact 2 | Confidence 3 | Ease 3
-Impact 2: Individual blog pages have low traffic (200-450 sessions each), and the visitor profile skews informational rather than transactional. Conversion rates on blog CTAs in B2B are typically 0.5-2%, yielding 1-3 conversions/month across all blog pages combined. Confidence 3: The organic traffic is confirmed and the topic-to-service mapping is straightforward. The shallow_engagement flag on /research-and-development-accounting confirms a content gap that a CTA alone won't fix, but adding service context alongside content improvement is a reasonable combined approach. Ease 3: Requires per-post CTA creation with topic-to-service mapping. Can be templated, but each post needs a relevant service link and resource offer. Moderate content effort across multiple pages.
-
-**What a win proves:** Organic blog traffic can be converted into advisory leads through contextual service CTAs. Validates investing in a content strategy that deliberately creates blog content as top-of-funnel entry points for specific service lines.
-**What a loss teaches:** Blog visitors may be too early in their journey (informational search, not evaluative) to respond to advisory CTAs. Or the blog content itself may need to be substantially improved before any CTA is effective (the shallow_engagement flag suggests content quality issues). Would suggest improving the content first and testing CTAs second.
+**What a loss teaches:** Industry page visitors may be too early in the funnel (browsing, not evaluating). If engagement metrics don't change, these visitors may need an entirely different page structure (diagnostic tool, assessment) rather than a conversion CTA.
 
 ---
 
-### 10. Segment-Based Hero Personalization
+### 9. Competitive Comparison Page
 
-**Page:** /
-**What to test:** Serve persona-matched hero messaging (headline, subhead, CTA) to different visitor segments based on traffic source signals, testing whether relevance-driven personalization outperforms a single best message.
+**Page:** New page (/compare or /why-embark)
+**What to test:** Create a transparent comparison page showing Embark vs. top 2-3 competitors on key evaluation criteria.
 
-**Current state:** All homepage visitors see the same hero regardless of their role, industry, or stage in the buying process. Embark serves four distinct personas (CFO, COO, CIO/CTO, CHRO/CPO) with different primary challenges, but the homepage speaks to none of them specifically. The persona messaging grid has detailed per-persona lead messages that have never been deployed.
-**Baseline:** 6,673 sessions/mo, 59.5% bounce, 0% CVR
-**Test Feasibility:** Depends on segment identification accuracy and per-segment traffic volume. With 4 segments and ~1,668 sessions/mo each (if evenly distributed), individual segment testing requires larger effect sizes or longer durations. Consider starting with 2 segments (CFO vs. all others).
-**Proposed change:** For visitors identifiable by UTM parameters, paid campaign source, or referral path, serve a hero variant matched to their likely persona. CFO-segment visitors see: "Your finance team is stretched. Our Big 4 Alumni advisors close the gap." COO-segment visitors see operations-focused messaging. Unidentifiable visitors see the baseline hero from Experiment #4.
+**Current state:** No comparison or "vs." page exists on Embark's site. The homepage has a "Traditional firms vs. Embark" comparison table that is the most assertive copy on the site, but it compares against a generic archetype, not named competitors. Meanwhile, competitive analysis identifies 7 direct competitors, high claim overlap (0.50 score), and three genuinely unique differentiators (Happy Works, Unmatched Hospitality, revenue growth trajectory) that no competitor can match.
 
-> **Before:** Single hero for all visitors: "High-impact consulting for growing companies" (or whatever wins from Experiment #4)
-> **After (CFO segment):** "Your finance team is stretched. Audit season is coming. The PE sponsor wants investor-ready reporting yesterday. We deploy Big 4 Alumni advisors who close your reporting gaps and stay until the job is done."
-> **After (COO segment):** "Scaling operations shouldn't mean scaling headcount at the same rate. We work alongside your team to redesign processes, implement systems, and make transformation stick."
+**Baseline:** No existing page. Estimate initial traffic from internal links + potential paid search targeting "[Competitor] alternative" keywords.
+**Test Feasibility:** Cannot estimate (new page with no traffic baseline). Pre/post analysis recommended rather than A/B test.
 
-**Why this should work:** Relevance is the strongest driver of B2B landing page conversion. A CFO evaluating advisory firms responds to finance-specific language; a COO responds to operations language. The current one-size-fits-all hero forces each persona to mentally translate generic copy to their context. Persona-matched messaging eliminates this translation step, increasing the speed from "page exists" to "page is for me." Four personas with distinct challenges create four distinct messaging opportunities.
+**Proposed change:** Create a comparison page structured around Embark's strengths: (1) lead with dimensions where Embark wins (published culture metrics, hospitality, flexibility), (2) include honest "where they're stronger" sections for credibility, (3) use the competitive positioning data: Embark NPS 93 vs. competitors who publish no satisfaction metrics; Embark 9% attrition vs. Big 4 average of 19%. Target competitors: Riveron (closest Dallas-based peer), CFGI (claims "largest independent"), CrossCountry (most similar culture positioning).
 
-**Target metric:** Segment-level engagement rate, secondary: segment-level /contact page visits
-**Audience:** Identifiable persona segments via UTM, campaign source, or referral
+**Why this should work:** B2B buyers actively compare vendors. If Embark doesn't provide a comparison, buyers build their own from competitor websites and review platforms -- where Embark has no control over framing. A comparison page created by Embark controls the evaluation criteria: anchoring on dimensions (quantified culture metrics, published NPS, attrition data) where no competitor has comparable evidence. Honest inclusion of competitor advantages builds credibility. The competitive analysis shows Embark has genuinely unique proof -- the comparison page makes that uniqueness explicit.
 
-**Scores:** Impact 4 | Confidence 2 | Ease 1
-Impact 4: Personalization at the highest-traffic touchpoint has outsized conversion potential. Matching messaging to persona can shift engagement rates significantly when the default is generic. Confidence 2: Three of four personas (COO, CIO, CHRO) are inferred from website descriptions, not validated by buyer interviews. Segment identification via UTM is reliable for paid traffic but unavailable for Direct (54.5% of sessions) and most Organic. Actual per-segment traffic volume is unknown. Ease 1: Requires personalization infrastructure (dynamic hero content by visitor segment), UTM-based audience targeting, and creation of 4 persona-specific hero variants. Cross-team coordination between marketing, development, and paid media. Note: Confidence is lower because three of four personas are inferred rather than validated. Testing with CFO only (the validated persona) would increase confidence to 3.
+**Target metric:** Primary: /contact page visits originating from comparison page. Secondary: time on page and scroll completion.
+**Audience:** Mid-to-late funnel evaluators comparing advisory firms. Expected traffic sources: internal links from service pages, organic search for "[competitor] alternative" keywords, paid search.
 
-**What a win proves:** Persona-specific messaging materially outperforms one-size-fits-all on Embark's homepage. Validates investment in personalization infrastructure for service pages, industry pages, and paid landing pages.
-**What a loss teaches:** Either the segment detection is too inaccurate (wrong message to wrong person), the personas don't actually evaluate through the lens we assumed, or the incremental lift from personalization doesn't justify the infrastructure investment. Would suggest persona validation research before further personalization investment.
+**Scores:** Impact 4 | Confidence 3 | Ease 2
+- Impact 4: B2B evaluation pages can become high-converting assets. Embark has strong, verifiable differentiators that comparison pages are designed to surface.
+- Confidence 3: New page creation has higher uncertainty than optimizing existing pages. No baseline traffic. Requires ongoing maintenance as competitors change. Comparison page effectiveness depends on whether Embark's target buyers actually comparison-shop online vs. through referral networks.
+- Ease 2: Requires new page creation, content development, competitor research formatting, and ongoing maintenance. Higher effort than optimizing existing pages.
 
----
+**What a win proves:** Embark's quantified differentiators are compelling in direct comparison. Validates that controlling the comparison frame is valuable for financial advisory buyers. Creates a reusable asset for sales enablement.
 
-### 11. Persona-Based Navigation Paths
-
-**Page:** Site-wide navigation
-**What to test:** Add persona or use-case-based navigation paths ("For CFOs," "For Operations Leaders," "By Challenge") alongside or replacing the current feature-based navigation structure.
-
-**Current state:** Site navigation is organized by capability: What We Do, Who We Serve, Resources, About. Visitors must self-filter through service descriptions to find relevance. With four distinct personas evaluating different capabilities, the feature-only navigation forces each persona to search across multiple pages. The Who We Serve section groups by industry vertical, not by buyer role.
-**Proposed change:** Add role-based navigation entries: "For CFOs" (links to audit readiness, financial reporting, Office of the CFO, M&A advisory), "For Operations Leaders" (links to digital transformation, supply chain, data analytics). Each persona landing page leads with the persona-specific messaging from the messaging hierarchy and surfaces relevant case studies and proof points.
-
-> **Before:** Navigation: What We Do | Who We Serve | Resources | About | Happy Works | Contact
-> **After:** Navigation: What We Do | For CFOs | For Operations Leaders | Who We Serve | Resources | About | Contact
-
-**Why this should work:** Multi-persona sites with feature-only navigation force every visitor to evaluate every service to find their own. Role-based navigation acts as a shortcut: a CFO clicking "For CFOs" immediately sees content curated for their challenges, reducing the cognitive effort of self-filtering. This pattern is common among competitors in adjacent markets but unused in Embark's competitive set, representing a potential white-space advantage.
-
-**Target metric:** Navigation click-through rate by path, secondary: service page engagement rate by persona, /contact page visits
-**Audience:** All site visitors
-
-**Scores:** Impact 4 | Confidence 2 | Ease 1
-Impact 4: Site-wide navigation changes affect all visitors and all downstream engagement. If visitors self-sort more efficiently, engagement increases across the entire site. Confidence 2: Four personas identified, but non-CFO personas lack direct evidence. Visitors may not identify with the role labels used in navigation. No data on whether current navigation is actually a friction point (enhanced measurement disabled, so click-path data is limited). Ease 1: Requires CMS navigation restructuring, creation of persona landing pages, content curation per persona, and potentially responsive design changes. Significant development and content effort.
-
-**What a win proves:** Visitors self-select into persona paths when given the option, and this self-selection improves downstream engagement and conversion. Validates a persona-centric site architecture.
-**What a loss teaches:** Visitors may not identify with role labels, or the current feature-based navigation may actually serve visitors better than assumed. The navigation change adds complexity (more options), which could increase decision paralysis rather than reduce it.
+**What a loss teaches:** Financial advisory buyers may not use vendor-created comparison pages (preferring third-party sources like G2, Clutch, or peer referrals). If traffic is low, the page exists as a sales enablement tool rather than a marketing conversion asset. Consider distributing the comparison content as a gated PDF instead.
 
 ---
 
-### 12. Finance Function Readiness Assessment
+### 10. Resource Content Bridge: Blog-to-Template CTAs
 
-**Page:** New page (linked from homepage, service pages, and paid campaigns)
-**What to test:** Build a short self-qualification diagnostic that helps visitors identify their finance function maturity level and receive a personalized recommendation for which Embark service fits their situation.
+**Page:** /13-week-cash-flow-forecast-model-template-best-practices (586 sessions, 52.7% bounce) and similar blog/content pages
+**What to test:** Add prominent download CTAs on blog posts that discuss templates Embark already offers as gated resources.
 
-**Current state:** Embark serves five distinct segments (PE-backed portfolio companies, mid-market in transition, enterprise finance functions, high-growth SaaS/tech, energy and infrastructure) across seven core service lines. Visitors have no self-service mechanism to determine which service fits their situation. All paths lead to the generic /contact form, which asks visitors to commit before understanding what they'll get. The site lacks interactive content that helps visitors self-identify.
-**Proposed change:** Build a 5-7 question diagnostic ("Finance Function Readiness Assessment") covering company stage, current challenges, team size, and timeline urgency. Output: personalized recommendation showing which service line fits, a relevant case study, and a suggested next step. Gate the detailed results behind email capture. Example: a PE-backed company with audit readiness concerns gets directed to FARS with the Atlas Technical case study (4-week SEC filing from three-way merger).
+**Current state:** The blog post about the 13-week cash flow template (/13-week-cash-flow-forecast-model-template-best-practices) receives 586 sessions with 52.7% bounce -- but the actual downloadable template lives on a separate page (/resources/13-week-cash-flow-forecast-model-template) that converts at 12.66%. Visitors landing on the blog post may not find the download page. Similarly, the career path guide for Big 4 CPAs (443 sessions, 55.8% bounce) has no visible download gate. The opportunity sizing identifies this as a "small" impact opportunity (~1-2 conversions/month for the cash flow post alone).
 
-**Why this should work:** Visitors facing a classification problem ("which of these seven services do I need?") before an evaluation problem ("is Embark good at it?") experience friction at the wrong stage. A diagnostic solves classification, positions Embark as the expert guide, and captures email at the moment of peak engagement (the visitor has invested effort and wants their answer). The commitment-consistency principle suggests that visitors who complete the assessment are more likely to follow through on the recommended next step. Assessment data also enriches sales understanding of each lead.
+**Baseline:** ~200 sessions/mo for cash flow blog post, 52.7% bounce, ~0% CVR
+**Test Feasibility:** ~12 weeks at 15% MDE if 5% capture rate is achieved. Extended. Consider aggregating multiple blog posts for statistical power.
 
-**Target metric:** Assessment completion rate, email capture rate on results page, secondary: /contact page visits from assessment results
-**Audience:** All visitors, particularly those arriving from non-branded search or paid campaigns who are still in early evaluation
+**Proposed change:** Add a prominent, contextual download CTA above the fold and inline within the blog post content. Format: "Download the Template: Get our 13-Week Cash Flow Forecast Model -- the same template we use with PE-backed portfolio companies. [Download Now]." Link directly to the gated download form, not to the resource listing page.
 
-**Scores:** Impact 3 | Confidence 2 | Ease 2
-Impact 3: Creates a net-new conversion path and generates enriched leads with self-reported needs data. But as a new page, it depends on successful traffic routing. Without promotion, a new page has zero organic traffic. Confidence 2: No existing self-service qualification mechanism to benchmark against. The pattern is common in SaaS but less proven in professional services consulting. Embark's five segments and seven service lines do create genuine classification complexity, but whether visitors will engage with a diagnostic is uncertain. Ease 2: Requires custom development (assessment flow, branching logic, results engine), content creation (per-recommendation copy, case study matching), and form integration. Likely a multi-sprint project.
+**Why this should work:** Visitors reading a blog post about a specific template have demonstrated intent -- they searched for or clicked on content about this exact topic. The conversion path currently requires the visitor to independently navigate to /resources and find the download page. Adding a direct bridge eliminates that navigation friction. The template page already converts at 12.66%, proving the content has value. The blog post is simply missing the bridge.
 
-**What a win proves:** Visitors will engage with self-service qualification tools in professional services, and the diagnostic-to-lead path can supplement or outperform the direct contact form approach.
-**What a loss teaches:** Professional services buyers may prefer human qualification over self-service tools, or the assessment may feel too generic to be useful. Would suggest the classification problem is better solved by persona-based navigation (Experiment #11) than by an interactive tool.
+**Target metric:** Primary: form_submit rate on blog posts with resource bridges. Secondary: template download attribution from blog traffic.
+**Audience:** Organic search visitors landing on blog content. Likely finance professionals searching for templates, checklists, and best practices.
+
+**Scores:** Impact 2 | Confidence 3 | Ease 5
+- Impact 2: Low traffic per page (~200/mo for the top blog post). Even at high capture rates, absolute conversion volume is small. Aggregate impact across multiple blog posts may be meaningful.
+- Confidence 3: The mechanism is straightforward (bridge content to download), but the blog audience may be less qualified than direct template seekers. Capture rate assumption is uncertain.
+- Ease 5: Adding a CTA and link to existing blog content. Trivial implementation. Can be deployed in hours across multiple posts.
+
+**What a win proves:** Blog content is an effective top-of-funnel capture mechanism when explicitly bridged to resources. Creates a scalable pattern for all content pages.
+
+**What a loss teaches:** Blog visitors may have a fundamentally different intent (learning, not downloading). If CTA impressions are high but clicks are near zero, the audience mismatch is too large for a CTA to bridge. Consider softer engagement mechanisms (newsletter, webinar invitations) instead.
 
 ---
 
 ## Sequencing Rationale
 
-The roadmap starts with three Quick Wins to build organizational confidence in testing and establish baseline conversion data on currently zero-converting pages. Experiment #1 (Objection Preemption) tests whether proactively addressing the non-CPA objection influences conversion on high-intent pages, teaching Embark how to handle their most structural positioning challenge in web copy. Experiments #2 (Team Page) and #3 (Offices Page) add conversion mechanisms to high-engagement pages that currently capture zero leads. These are low-risk, high-ease implementations that establish whether evaluation-stage pages generate leads when given the opportunity. They also produce baseline CTA click-through data that informs what conversion rates to expect when adding CTAs to service and industry pages (Experiments #6 and #7).
+**Start with Experiments 1, 2, and 3 in parallel.** These target different pages (homepage, /contact, service pages) and different mechanisms (messaging clarity, trust reinforcement, conversion path creation). Running them simultaneously maximizes learning velocity without measurement interference. All three are high-confidence, high-ease tests that build organizational momentum.
 
-The Strategic Bets build on Quick Win learnings. Experiment #4 (Homepage Hero Overhaul) is the highest-impact test in the roadmap. It should run after Quick Wins establish testing process and internal buy-in, because a carousel removal and above-fold restructuring requires broader stakeholder alignment than adding a content block. If the hero overhaul wins, it validates differentiation-led messaging as Embark's web strategy, informing every downstream experiment. If it loses, the loss interpretation drives a fundamentally different direction: either the differentiation-led framing is wrong, or the proof metrics don't resonate, both of which reshape subsequent tests. Experiment #5 (Contact Page Paid Alignment) can run in parallel with #4 since it targets different traffic on a different page. Experiment #6 (Service Page Differentiation) should run after the homepage messaging is validated so it can extend the proven approach, rather than guessing which messaging direction to take. Experiment #7 (Industry Pages) follows the same template as #6 and should run concurrently or immediately after, applying service page learnings to vertical-specific content.
+**Experiment 1 (Homepage Clarity Overhaul) sets the positioning direction.** If differentiation-led messaging wins on the homepage, it validates the core strategy that informs Experiments 4, 6, and 7. If it loses, the team should pause and reconsider whether culture-proof positioning resonates with Embark's audience before propagating it to other pages.
 
-The Explorations are sequenced by dependency and infrastructure requirements. Experiment #8 (Returning Visitor Experience) can run once audience segmentation exists in the testing platform, which is also a prerequisite for Experiment #5. Experiment #9 (Blog Content) is independent and can run at any time via pre/post measurement, but has the lowest impact ceiling. Experiment #10 (Segment Personalization) only makes sense after Experiment #4 proves which baseline messaging works. You need a validated default before you can test whether persona-specific variants outperform it. Experiment #11 (Persona Navigation) is the most structural change in the roadmap and should only proceed if Experiment #6 reveals persona-specific engagement patterns on service pages. Experiment #12 (Assessment Tool) is the longest build and should wait until positioning fundamentals are validated across the site.
+**Experiment 4 (Specificity Injection) runs after Experiment 1, same page.** These are separate hypotheses targeting different page zones: Experiment 1 tests the headline/ATF positioning frame, Experiment 4 tests whether quantified case study metrics improve body copy engagement. Experiment 4 should only run after Experiment 1 resolves so the body copy operates under a proven headline.
 
-Cross-tier dependencies: Quick Win results (#2, #3) establish baseline CTA conversion rates for zero-converting pages, directly informing the conversion projections for #6 and #7. Experiment #4's result informs both #6 (messaging direction) and #10 (baseline for personalization). Experiment #1 is independent of other experiments and its learning (does proactive objection handling work in web copy?) applies broadly. Experiment #8 (returning visitors) shares infrastructure requirements with #5 (audience targeting in testing platform).
+**Experiment 5 (Ad-Message Alignment) runs after Experiment 2.** Both target /contact but test different mechanisms. Experiment 2 adds universal trust reinforcement. Experiment 5 creates a paid-traffic-specific experience. If Experiment 2 wins, Experiment 5 builds on the improved page experience for a specific audience. If Experiment 2 loses, Experiment 5 still has merit (the gap is channel-specific).
+
+**Experiment 6 (Service Page Differentiation) depends on Experiment 3.** Experiment 3 adds conversion CTAs to service pages. Experiment 6 improves the page content to make those CTAs more effective. Without a conversion mechanism (Experiment 3), Experiment 6 has no metric to optimize against.
+
+**Experiment 7 (About Page Proof Hierarchy) is independent** and can run alongside any other experiment since it targets a separate page.
+
+**Experiments 8, 9, and 10 are Explorations** that run when bandwidth allows, after the Quick Wins and Strategic Bets have produced results. Experiment 9 (Comparison Page) has the longest creation timeline and should begin content development early, even if the launch is deferred.
+
+**Low-traffic page prioritization:** Service pages (/what-we-do/*) support only one concurrent test at current traffic levels (1,408 sessions/mo aggregate). Experiment 3 runs first; Experiment 6 queues behind it. Similarly, industry pages (/who-we-serve/*) with 426 sessions/mo can only support one test at a time.
+
+**Proximity-to-conversion ordering within tiers:** Within the Quick Wins tier, Experiment 2 (contact page, closest to conversion) takes priority over Experiment 1 (homepage, further from conversion) when resources force a choice. Within Strategic Bets, Experiment 5 (contact page variant) takes priority over Experiment 6 (service pages) for the same reason. However, since Experiments 1, 2, and 3 target different pages, they should run in parallel rather than sequenced by proximity.
+
+---
+
+## Cross-Channel Propagation Candidates
+
+These are not scored experiments. They are contingent suggestions that become actionable only if the source experiment wins.
+
+- If **Experiment 1** (Homepage Clarity Overhaul) wins: test the same differentiation-led headline in LinkedIn ads. Rationale: LinkedIn is a primary channel for reaching CFOs at PE-backed companies, and the "Big 4 Alumni advisors who stay, execute, and care" message can be tested as ad copy with the same mechanism (differentiation over category language).
+- If **Experiment 1** wins: update the Google Search ad description to match the winning headline. Current search ad description likely uses generic category language. Rationale: ad-to-page message continuity compounds with the homepage win.
+- If **Experiment 2** (Contact Form Context Reinforcement) wins: apply the same proof strip and testimonial pattern to email nurture sequences. Rationale: the trust-building mechanism at the point of conversion transfers to the point of re-engagement.
+- If **Experiment 4** (Specificity Injection) wins: replace generic outcome language in sales decks and proposals with the winning case study metric format. Rationale: if quantified specificity outperforms aspirational language on the website, it likely outperforms in sales materials for the same audience.
+- If **Experiment 6** (Service Page Differentiation) wins: replicate the differentiation block pattern on the Embark partner page (/partners, 517 sessions) and technology pages. Rationale: the same comparison-mode buyer visits partner and technology pages when evaluating implementation capabilities.
 
 ---
 
 ## What's Not Here (and Why)
 
-### Patterns Evaluated and Excluded
+**Form field reduction (service/industry pages).** No forms currently exist on service or industry pages (0% CVR, no conversion mechanism). Before testing form optimization, Experiment 3 must first add a form. Form optimization becomes testable only after a baseline conversion rate is established.
 
-**Homepage content offer for unready visitors.** Evaluated and rejected. The hypothesis was to add a mid-funnel content download offer to the homepage for visitors not ready to "Talk to an advisor." However, the homepage carousel already promotes downloadable templates in slides 2 and 3 (controller transition template, external audit preparation guide). These are content offers prominently placed above the fold, and they are not converting: the homepage has 0% CVR despite the carousel templates being visible to all 6,673 monthly visitors. Adding another content offer to a page where content offers are already failing is not a valid hypothesis. The real question is why the existing content offers don't convert, which is addressed by Experiment #4 (replacing the carousel entirely with differentiation-led messaging).
+**Urgency and scarcity tactics.** Evaluated and suppressed. Embark serves mid-market to enterprise B2B buyers in professional services with sales cycles measured in weeks to months. Enterprise B2B buyers are 34% more likely to abandon when they perceive artificial scarcity, and 40% distrust vendors who rely on fabricated urgency. If genuine scarcity exists (limited client roster, cohort-based onboarding), frame it as a structural reality ("We maintain focused engagements to ensure senior advisor availability") rather than a pressure tactic.
 
-**Pricing transparency.** Embark's pricing model is inherently variable: project-based, retainer, interim, and fractional engagements with scope-dependent pricing. No public pricing page exists. Competitors in this space also don't publish pricing. For project-based consulting where deal sizes depend on engagement scope, duration, and team composition, publishing price ranges risks either scaring qualified prospects (high anchor) or attracting unqualified ones (low anchor). Not recommended until competitive dynamics change.
+**Personalization (segment-based hero, industry proof matching).** Embark serves 4 distinct personas (CFO, COO, CIO/CTO, CHRO), making personalization theoretically high-impact. However, 53% of personalization implementations harm conversion rates. Before testing personalization: (1) verify segment detection accuracy (UTM structure, reverse IP reliability), (2) confirm distinct messaging exists and has been validated per segment (Experiments 1, 4, 6 should validate base messaging first), (3) ensure traffic per segment supports statistical significance. Personalization amplifies the base experience -- resolve base experience hypotheses (Experiments 1-7) before testing personalization.
 
-**Form field reduction.** The current field count on the /contact form could not be confirmed from available context. If the form has 5+ fields, reducing to name, email, and company is a strong test. Recommendation: audit the /contact form structure, then evaluate. Session recording analysis would provide baseline drop-off data by field.
+**Pricing transparency test.** Embark does not publish pricing, and no pricing page exists. Competitors also lack published pricing (project-based/retainer models with variable deal sizes). Pricing transparency is a legitimate test for SaaS companies with clear tiers, but for professional services with custom engagements ranging from one-time projects to ongoing retainers, publishing pricing requires internal stakeholder alignment and potentially changes the sales model. This is a business decision, not a CRO test.
 
-**Long-form vs. short-form page testing.** Page scroll depth and content length could not be confirmed. Enhanced measurement (scroll events) is currently disabled, so the baseline data needed to evaluate this pattern does not exist.
+**Navigation restructuring by persona/use case.** Evaluated but too early. Embark has 4 personas, but only the CFO persona is well-evidenced (4 testimonials from CFO-adjacent roles). COO, CIO, and CHRO personas are inferred from service descriptions with no direct evidence. Testing persona-based navigation without validated persona definitions risks optimizing for segments that don't match actual buyer behavior. Prerequisite: validate non-CFO personas through client interviews or CRM data before investing in navigation restructuring.
 
-**Value-before-commitment sequencing.** Embark sells consulting services, which are inherently difficult to "preview" before commitment. Unlike SaaS products with interactive demos, consulting value is demonstrated through credentials and case studies. The assessment tool (Experiment #12) is the closest applicable variant of this pattern.
+**Homepage carousel optimization (rather than replacement).** The carousel itself is the problem, not the slide content. Carousel elements on homepages have consistently underperformed in testing. Slide 2-3 content (template promotions) is better served as a secondary CTA or resource section below the fold, not as a rotating primary message. Experiment 1 replaces the carousel entirely rather than optimizing within a structurally weak pattern.
 
-**Comparison-mode intervention.** GA4 data shows pages/session averaging 1.06-1.37, indicating most visitors view 1-2 pages per session. No significant deep-browsing segment exists that would benefit from session-depth-triggered offers.
+**Enhanced measurement re-enablement.** Scroll, click, and file_download events dropped to zero in the current period (previously 36,708 scroll events, 5,207 click events). This is a tracking configuration issue, not an experiment. Re-enabling enhanced measurement is a prerequisite action item (see Prerequisites section), not a testable hypothesis.
 
-### Patterns Skipped Due to Missing Data
+**Direct traffic investigation.** Direct traffic (54.5% of sessions) has an 85.2% bounce rate, up from 69.5%. This is anomalous and warrants investigation (bot traffic, misconfigured referral exclusions, internal/app traffic). Before optimizing the homepage for direct visitors, determine whether this traffic is real. This is an analytics hygiene task, not a CRO experiment.
 
-**CTA click-through optimization and element engagement drop-off.** No element-level interaction data is available. Enhanced measurement (click events) has been disabled. Re-enabling would unlock CTA click-through analysis and carousel engagement decay data, enabling two additional experiment patterns.
+**Return visitor login optimization.** Embark is a consulting firm, not a SaaS product. There is no logged-in experience with saved state, personalized dashboards, or streamlined workflows. Making login prominent only lifts revenue when the logged-in experience has genuine value. Without an account experience that justifies login, this pattern does not apply.
 
-**Form optimization (field reduction and multi-step).** Form field count, structure, and per-field abandonment data are unknown. A site audit or session recording analysis would provide the baseline needed to evaluate these patterns.
+**Infeasible experiments (traffic too low for A/B testing):**
+- **/happy-works page optimization** -- 352 sessions over 90 days (~117/mo). The Happy Works page has strong engagement (25.3% bounce) but insufficient traffic for A/B testing at any feasible timeline. This page is Embark's strongest positioning asset and deserves attention, but changes should be implemented directly (pre/post analysis) rather than A/B tested. Suggestion: update NPS from stale 87 to confirmed 93, add case study metrics, and monitor engagement metrics pre/post.
+- **/research-and-development-accounting** -- 441 sessions, 81.0% bounce, shallow engagement. This page has a keyword-content mismatch (high organic traffic, immediate exits). The fix is editorial (rewrite to match search intent or redirect to a relevant resource), not an A/B test. Pre/post analysis recommended.
 
-### Infeasible at Current Traffic
+---
 
-**Happy Works page: Is the existing form converting, and can it convert better?** The /happy-works page (352 sessions per 90 days, ~117 sessions/mo, 25.3% bounce, 107s avg engagement) is one of the most engaging pages on the site. It houses Embark's strongest differentiator (Happy Works philosophy with NPS 93, 9% attrition, revenue growth trajectory) and has a form at the bottom of the page. The performance profile does not include conversion data for this page, so it is unknown whether the form generates any submissions. The testable question is whether culture-page visitors who are deeply engaged (107s avg, low bounce) can be converted through form optimization, contextual proof placement, or a different offer framing. At 117 sessions/mo, A/B testing is impractical. Suggested approach: first, instrument the form to confirm whether it fires form_submit or a dedicated event, and measure current conversion rate. If the form is converting, optimize via pre/post. If it is not, test a different offer framing (e.g., "See how Happy Works translates to client outcomes" with a case study CTA instead of or alongside the form) via pre/post analysis over 60-90 days.
+## If Tests Are Inconclusive
 
-### Just-Do-It Fixes (Not Experiments)
+A/B tests produce inconclusive results 41-50% of the time. This is normal, not a failure. Each experiment below has a predefined response for a flat result.
 
-These items should be implemented directly. They are not hypotheses requiring A/B testing because the correct action is clear:
+**General protocol for any inconclusive test:**
+1. Verify test integrity: check for tracking errors, bot traffic (especially given the anomalous 85.2% direct bounce rate), external events (holidays, PR incidents, product changes) that may have contaminated results.
+2. Run the segment analysis specified below. If any segment shows statistical significance, consider deploying the variant as a personalization for that segment only.
+3. Check the micro-conversion specified below. If the leading indicator improved but the macro conversion didn't, downstream friction exists. The "next test" recommendation addresses it.
+4. If no signal in segments or micro-conversions: follow the "if flat" action below.
+5. For experiments on pages with volatile traffic (especially homepage with 54.5% direct traffic): if the test reaches p < 0.15 but not p < 0.05, and the result aligns with the predicted direction, recommend deploying with continued monitoring and re-evaluating at 2x the original sample size. If the effect holds at 2x sample, confirm. If it reverses, revert. This applies only to well-supported hypotheses (Experiments 1-7), not Explorations.
+6. Post-deployment validation: for winning variants on the homepage (which receives >30% of traffic from volatile direct sources), run a 30-day pre/post time-series comparison after deployment. Monitor traffic source composition weekly. If the dominant traffic source shifts >20% in volume or composition during validation, extend the window or re-run the test.
 
-- **Update NPS from 87 to 93 on the main site.** HubSpot landing pages already show the confirmed figure. The main site displays a stale number.
-- **Re-enable enhanced measurement in GA4.** Scroll, click, and file_download events dropped to zero in the current period. This data is essential for engagement analysis across all experiments.
-- **Add a download CTA to /13-week-cash-flow-forecast-model-template-best-practices.** This blog post (586 sessions/mo, 52.7% bounce) discusses a template that has a dedicated download page converting at 12.66%. Visitors likely can't find the actual download. Add a prominent link.
-- **Gate the career path guide for Big 4 CPAs.** /resources/guides/the-career-path-guide-for-big-4-cpas (443 sessions, 55.8% bounce) sits in the Resources group (6.55% avg CVR) but converts at ~0%. Unlike template pages with download gates, this guide has no visible conversion mechanism. Add an email gate consistent with other resource pages.
-- **Update "Strategic Business Consulting" H1 on /what-we-do.** This framing doesn't match buyer vocabulary. "Financial Advisory and Consulting" aligns with how buyers search and how Parthenon Capital describes Embark.
-- **Investigate Direct traffic quality.** Direct traffic (54.5% of all sessions) has an 85.2% bounce rate, up from 69.5% prior period. This is anomalous for legitimate Direct traffic. Check for: bot traffic, HubSpot/internal referral leakage, mobile app WebView traffic, or misconfigured CMS preview traffic. Fixing this may significantly change site-wide metrics.
+### Quick Wins
+
+**Experiment 1: Homepage Clarity Overhaul**
+- **Check first:** New vs. returning visitors -- if returning visitors respond but new don't, the differentiation message requires prior brand awareness to land
+- **Micro-conversion:** CTA click-through rate ("Talk to an advisor" and "What we do"). If clicks increase but bounce stays flat, the messaging resonated but the post-click experience needs work
+- **If segment shows signal:** Deploy differentiation-led hero for the responding segment. Keep the generic version for others while iterating on copy for the non-responding segment
+- **If flat across segments:** Iterate bolder. Test a full ATF overhaul: remove the carousel, replace with video testimonial from a named CFO (e.g., Jim Forson: "Every single Embarker has been competent, enthusiastic, passionate"), combine with proof strip. If the headline change alone is flat, the content format may matter more than the copy
+- **Leads to:** Experiment 4 (Specificity Injection) if this line is abandoned
+
+**Experiment 2: Contact Form Context Reinforcement**
+- **Check first:** Traffic source -- cross-network (paid) vs. direct visitors. If cross-network visitors respond but direct don't, the reinforcement addresses ad-to-page trust gaps
+- **Micro-conversion:** form_start rate. If form_start improves but form_submit doesn't, the context helped initiation but the form itself is the remaining barrier
+- **If segment shows signal:** Deploy reinforcement for the responding channel. Run Experiment 5 (Ad-Message Alignment) as the next test for non-responding channels
+- **If flat across segments:** Move to Experiment 5. The /contact page issue may be message mismatch (channel-specific) rather than trust gaps (universal)
+- **Leads to:** Experiment 5 (Cross-Network Ad-Message Alignment)
+
+**Experiment 3: Service Page Conversion Injection**
+- **Check first:** Service page type -- compare conversion rates across individual service pages. If M&A consulting converts but Digital Transformation doesn't, the resource match matters more than the CTA placement
+- **Micro-conversion:** CTA click-through on service pages (clicks on the resource download CTA)
+- **If segment shows signal:** Expand winning service-resource matches. Retire or replace non-converting matches
+- **If flat across segments:** The service page audience may be too top-of-funnel for gated content. Test ungated content (blog links, video explainers) instead of forms. Move on to Experiment 6 (Differentiation Injection) which addresses content quality rather than conversion mechanics
+- **Leads to:** Experiment 6 (Service Page Differentiation)
+
+### Strategic Bets
+
+**Experiment 4: Specificity Injection on Homepage**
+- **Check first:** Organic vs. paid visitors. Organic visitors (research intent) may respond more strongly to specific proof; paid visitors may need the promise-to-proof match from Experiment 5
+- **Micro-conversion:** Scroll depth past proof sections, click-through on service tiles
+- **If segment shows signal:** Deploy specificity for responding segment. Test different proof types (operational metrics vs. growth metrics vs. named client logos) for the non-responding segment
+- **If flat across segments:** Iterate bolder -- replace the entire service tile section with a case study carousel showing before/after metrics. If subtle specificity additions don't move the needle, test a fundamentally different content structure
+- **Leads to:** Experiment 6 (Service Page Differentiation) -- propagate specific proof to service pages
+
+**Experiment 5: Cross-Network Ad-Message Alignment**
+- **Check first:** Individual ad campaign performance. If Performance Max converts differently than standard search campaigns, the variant needs campaign-specific messaging, not a single paid variant
+- **Micro-conversion:** form_start rate for cross-network visitors specifically
+- **If segment shows signal:** Create campaign-specific landing page variants (one per ad group or campaign type)
+- **If flat across segments:** The CVR gap between direct and cross-network may reflect traffic quality (lower intent from display/discovery placements in Performance Max) rather than message mismatch. Consider splitting Performance Max into separate campaigns for clearer attribution. Move on to Experiment 8 (Industry Page Conversion)
+- **Leads to:** Experiment 8 (Industry Page Conversion Path)
+
+**Experiment 6: Service Page Differentiation**
+- **Check first:** New vs. returning visitors on service pages. New visitors in comparison mode are the primary target; returning visitors may have already evaluated differentiation
+- **Micro-conversion:** Time on page and resource download CTA click-through (from Experiment 3's conversion mechanism)
+- **If flat across segments:** The differentiation blocks may not be specific enough to the individual service areas. Test a more radical approach: replace generic service descriptions entirely with case-study-led narratives for each service
+- **Leads to:** Experiment 9 (Competitive Comparison Page) -- if on-page differentiation doesn't work, try a dedicated comparison format
+
+**Experiment 7: About Page Proof Hierarchy**
+- **Check first:** Referral source. Visitors from /what-we-do/* or /contact (evaluating) vs. visitors from external links (brand research) may have different proof needs
+- **Micro-conversion:** Click-through to /contact or /happy-works from /about
+- **If flat across segments:** The About page may already be well-optimized for its actual audience (22.9% bounce suggests strong relevance). Move on. The About page's low bounce rate means it's working -- don't fix what isn't broken
+- **Leads to:** No direct successor. About page optimization is a standalone test
+
+### Explorations
+
+**Experiment 8: Industry Page Conversion Path**
+- **Check first:** Industry page type. Compare conversion rates across energy, healthcare, technology, etc. If energy pages convert (3 available case studies) but others don't, it's a proof availability problem, not a structural one
+- **Micro-conversion:** CTA click-through on industry pages
+- **If flat across segments:** Move on. Industry pages may serve awareness intent only. Redirect effort to strengthening the resource library with industry-specific content
+- **Leads to:** Experiment 9 (Comparison Page) -- if industry-specific proof doesn't convert on Embark's pages, try a comparison format
+
+**Experiment 9: Competitive Comparison Page**
+- **Check first:** Traffic source. Organic search visitors (searching "[competitor] alternative") vs. internal navigation visitors have different intent and baseline trust
+- **Micro-conversion:** Time on page and /contact visits from comparison page
+- **If flat:** The comparison page may need promotion (paid search targeting comparison keywords, internal linking from service pages) before it can generate meaningful traffic. If traffic exists and engagement is strong but downstream conversion is flat, the comparison convinced visitors but the /contact path has friction. Test pre-filling the /contact form context based on the comparison page visit
+- **Leads to:** Consider gating the comparison as a downloadable PDF for lead capture
+
+**Experiment 10: Resource Content Bridge**
+- **Check first:** Content page type. Compare blog posts about templates vs. blog posts about general topics. If template-adjacent posts convert but general posts don't, expand the pattern narrowly
+- **Micro-conversion:** CTA click-through on bridge elements
+- **If flat:** Blog visitors may prefer reading to downloading. Move on to other opportunities. The absolute volume (~200 sessions/mo per post) makes this a low-priority optimization
+- **Leads to:** No direct successor. This is the lowest-impact experiment in the roadmap
 
 ---
 
@@ -406,25 +487,25 @@ These items should be implemented directly. They are not hypotheses requiring A/
 
 ### Missing Baseline Data
 
-- **Enhanced measurement disabled.** Scroll, click, and file_download events report zero in the current period despite significant volume in the prior period (36,708 scroll, 5,207 click, 645 file_download). Affects: all experiments (engagement depth metrics unavailable), plus blocks CTA click-through optimization and element engagement patterns entirely. Action: re-enable enhanced measurement in GA4 property settings.
-- **Form field count and structure unknown.** The /contact form's field count, field types, and per-field abandonment rates are not documented in any context file. Affects: form optimization patterns (would enable Experiments targeting form friction if 5+ fields confirmed). Action: audit /contact form fields, implement form_start/form_submit step tracking with per-field instrumentation.
-- **Element-level interaction data not available.** No per-element click tracking exists for CTAs, proof sections, or navigation elements. Affects: CTA click-through optimization and element engagement drop-off patterns. Action: implement element-level event tracking for primary CTAs, carousel slide interactions, and proof section visibility.
-- **Per-page scroll depth not measured.** Scroll depth data is unavailable due to enhanced measurement being disabled. Affects: long-form vs. short-form page testing and content engagement assessment. Action: re-enable scroll event tracking.
+- **Enhanced measurement disabled.** Scroll, click, and file_download events dropped to zero in the current period. Re-enable enhanced measurement in GA4 immediately. Affected experiments: all (scroll depth data improves confidence in engagement-based metrics), particularly Experiments 4 and 7 where scroll depth is a key proxy metric. **Action:** Re-enable in GA4 Admin > Data Streams > Enhanced Measurement.
+- **No conversion tracking on service, industry, team, about, offices, or happy-works pages.** These pages have zero conversion events despite significant traffic (combined ~10,000 sessions/90 days). Affected experiments: 3, 6, 7, 8 (all rely on downstream conversion metrics). **Action:** Implement event tracking for CTA clicks and resource download initiations on these pages. At minimum, track "talk_to_an_advisor_cta_click" on all pages where the CTA appears.
+- **Direct traffic quality unknown.** 54.5% of sessions are Direct with 85.2% bounce (up from 69.5%). Before optimizing the homepage (Experiments 1 and 4), determine whether this traffic is real. **Action:** Check for bot traffic patterns, HubSpot internal referral leakage, mobile app WebView traffic, and misconfigured CMS preview traffic. Filter confirmed non-human traffic from analytics.
+- **Form completion vs. initiation rates.** form_start (908 events) vs form_submit (544 events) gives a 60% completion rate overall, but per-page breakdown is not available in the current data. Affected experiments: 2, 5 (both optimize the /contact form funnel). **Action:** Set up per-page form_start and form_submit tracking in GA4 to isolate initiation vs. completion friction.
+- **No segment-level tracking.** No audience segmentation exists in GA4 for PE-backed portfolio companies (stated primary segment), mid-market vs. enterprise, or industry verticals. Affected experiments: all (segment analysis in the inconclusive protocol requires this data). **Action:** Implement UTM parameter conventions for segment identification in paid campaigns. Consider reverse IP enrichment for organic traffic.
 
 ### Context Verification Needed
 
-- **NPS discrepancy.** Main site shows 87, HubSpot landing pages show 93, client confirmed 93. Affects: all proof-dependent experiments using NPS as a credibility signal. Action: update main site to confirmed 93 (listed as just-do-it above).
-- **Non-CFO personas are inferred.** COO, CIO/CTO, and CHRO persona definitions are based on website service descriptions and job norms, not buyer interviews or sales data. Affects: Experiments #10 (Segment Personalization) and #11 (Persona Navigation), where persona accuracy directly determines messaging relevance. Action: interview 2-3 buyers in non-CFO roles to validate or revise persona definitions.
-- **"Right-sized flexibility" value theme has weak proof.** Only Level 2 testimonial evidence supports this theme. Multiple competitors offer similar engagement flexibility. Affects: any experiment using flexibility as a differentiating claim. Action: collect engagement model data (average project duration, contract structure statistics, cost comparisons to Big 4 alternatives).
-- **Competitive landscape confidence is 2.** Limited by single-page extractions for several competitors (Accordion, CFGI, Opportune, Forvis Mazars) and no pricing data across competitors. Affects: Experiment #6 (Service Page Differentiation), where differentiation effectiveness depends on competitive accuracy. Action: deeper competitive research on Riveron, Accordion, and CFGI service positioning and pricing signals.
-- **Team page audience composition unknown.** /team receives 4,217 sessions/90 days with high engagement, but the visitor mix (buyers vs. job seekers vs. competitors vs. employees) is unknown. Affects: Experiment #2 (Team Page Conversion Path) -- if most visitors are non-buyers, the conversion opportunity is smaller than the traffic suggests. Action: analyze /team traffic by source/medium and cross-reference with /careers traffic patterns to estimate buyer proportion.
+- **NPS discrepancy.** Main site still shows stale NPS 87 while landing pages and client confirmation say NPS 93. Affected experiments: 1, 2, 4, 7 (all use NPS 93 in proposed copy). **Action:** Update main site to reflect confirmed NPS of 93 before running experiments that reference it. Using the correct number is not an experiment -- it's a fix.
+- **About page current layout.** Experiment 7 assumes the About page leads with mission/values narrative. This is inferred from site analysis but not directly confirmed. **Action:** Verify current About page structure before scoping the restructure variant.
+- **Service page exact copy.** Some service page copy is available ("Solving complex business challenges with industry-leading expertise"), but exact copy for all 13 service pages is not fully extracted. Affected experiments: 6. **Action:** Capture full copy for all service pages before writing differentiation blocks.
+- **Ad creative content.** Experiment 5 requires matching the /contact page to the ad creative. Current ad copy and creative are not in the available context. **Action:** Export current Google Ads campaign copy and creative assets before scoping the ad-aligned variant.
 
 ### Infrastructure Prerequisites
 
-- **Audience targeting in testing platform.** Required for Experiment #5 (paid traffic variant on /contact), Experiment #8 (returning visitor experience), and Experiment #10 (segment-based hero personalization). Experiments need the ability to serve different page variants based on UTM parameters, campaign source, referral path, or visitor state (new vs. returning). Action: verify whether the current testing platform supports UTM-based, source-based, and cookie-based audience targeting.
-- **Personalization infrastructure.** Required for Experiment #10 (dynamic hero content by visitor segment). Experiment needs the CMS or testing platform to support conditional content blocks. Action: evaluate whether existing CMS or FunnelEnvy's testing infrastructure can deliver dynamic hero content by visitor segment without custom development.
-- **CMS navigation flexibility.** Required for Experiment #11 (persona navigation paths). The navigation restructuring requires the CMS to support adding role-based entries without major template changes. Action: assess CMS navigation capabilities and estimate development effort for adding persona-based navigation.
+- **A/B testing platform with audience targeting.** Experiments 2 (channel-specific analysis), 5 (paid-only variant), and personalization prerequisites require the ability to target test variants by traffic source, device, or audience segment. **Action:** Confirm the current testing platform (FunnelEnvy is referenced in viewed_experiment events) supports UTM-based audience targeting.
+- **CMS template flexibility.** Experiments 1 (carousel removal), 3 and 8 (CTA additions to templates), and 7 (content reordering) require CMS changes. **Action:** Confirm HubSpot CMS supports per-page or per-template widget insertion for service and industry page groups.
+- **form_submit event reclassification.** form_submit (resource downloads) is not a GA4 Key Event, despite being the primary MQL driver (544 events vs. 53 contact_us_form_submit). This affects all experiments measuring resource download conversion. **Action:** Mark form_submit as a Key Event in GA4 to enable unified conversion reporting.
 
 ---
-*Analysis produced by FunnelEnvy | 2026-03-12 (revised)*
-*Based on positioning analysis across 5 context sources and GA4 behavioral data (65,850 sessions, 90 days)*
+*Analysis produced by FunnelEnvy | 2026-03-20*
+*Based on positioning analysis across 5 context sources including company research, competitive landscape, audience messaging, positioning scorecard, and 90-day GA4 performance data (65,850 sessions)*

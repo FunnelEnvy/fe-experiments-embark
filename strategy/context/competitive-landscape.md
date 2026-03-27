@@ -631,6 +631,8 @@ Interpretation: Moderate overlap. Three of Embark's seven claims are shared by m
 
 4. **Integrated ESG advisory from a non-CPA firm** [Credible] - Most ESG advisory in this competitive set comes from CPA firms (Cherry Bekaert, Baker Tilly, Forvis Mazars, RSM) where ESG is bundled with assurance. Among pure-play advisory firms, only Riveron and Embark offer ESG consulting. The non-CPA framing avoids the independence constraints that limit CPA firms' ESG advisory scope for audit clients. No proof points yet specific to ESG engagements.
 
+5. **GEO/AIO (Generative Engine Optimization) first-mover opportunity** [Emerging] - AI search engines (ChatGPT, Perplexity, Google AI Overviews) are becoming a meaningful discovery channel for B2B advisory services. None of the competitors in this set appear to have optimized for AI search visibility. Embark has an opportunity to be the first financial advisory firm in this competitive set to structure content for AI citation and inclusion. Cross-client research indicates advisory/consulting firms generally have poor AI search presence due to thin service pages, gated content, and HubSpot CSS head bloat limiting crawlability. Early action here compounds over time as AI search engines build authority signals. Risk: HubSpot's inline CSS approach may limit crawl depth without technical mitigation.
+
 **Confidence:** 3
 
 ---
@@ -760,3 +762,4 @@ The following questions would most improve the confidence of this analysis. They
 |------|--------|----|
 | 2026-02-24 | Initial creation at deep depth. 10 competitors analyzed (11th -- Connors Group -- flagged as misidentified). Client-provided competitor list researched across homepages, about pages, services pages. Reddit r/Accounting and r/Big4 yielded 4 relevant threads (Siegfried reputation data, Embark/CFGI perception). No competitor pricing publicly available. Two structural differentiators identified (Happy Works, Unmatched Hospitality). Claim overlap score 0.50 (moderate). | positioning-framework |
 | 2026-02-24 | Merged prior run data: Connor Group profile added (resolves "Connors Group" from client intake). CFGI profile enhanced with Jay Clayton (former SEC Chair), 28+ global offices, ~1,000+ employees, FloQast Elite Tier, 2023 layoff data from Reddit. CFGI confidence raised from 3 to 4. Claim Overlap Map updated with Connor Group column. Competitor count updated to 11. | manual merge (prior-run) |
+| 2026-03-12 | Added white space #5: GEO/AIO (Generative Engine Optimization) as an emerging channel opportunity. Based on cross-client learnings showing advisory firms have minimal AI search presence. | post-call update |

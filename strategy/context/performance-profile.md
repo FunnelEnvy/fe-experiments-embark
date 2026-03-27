@@ -585,3 +585,7 @@ L0 states the primary CTA is "Talk to an advisor" but talk_to_an_advisor_cta_cli
 - L0 mentions 26 US offices, but /offices pages (1,850 sessions) have no conversion tracking despite being a consideration-stage page for in-market buyers
 - L0 lists 19 industry verticals served; /who-we-serve/* has 7 industry pages visible in top 50 but none have conversion paths
 - L0 references "Happy Works" philosophy as a differentiator; /happy-works page (352 sessions, 25.3% bounce) shows good engagement but no conversion mechanism
+
+### Technical Notes
+
+- **HubSpot CSS head bloat (2026-03-12):** The Embark homepage inlines a large volume of CSS in the `<head>`, which may degrade AI bot crawlability for generative engine optimization (GEO/AIO). AI search crawlers (ChatGPT, Perplexity, Google AI Overviews) have token limits on what they parse; excessive head content can push meaningful body content beyond those limits. Investigation needed to quantify the bloat and evaluate mitigation options (e.g., external stylesheet, critical CSS extraction).
